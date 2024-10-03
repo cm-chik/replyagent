@@ -31,7 +31,7 @@ const Navbar = () => {
         <div className="flex gap-8 px-12">
           <div className="flex gap-2 items-center">
             <Image
-              src="/images/icons/arrow-down.svg"
+              src="/images/icons/.svg"
               alt=""
               width={20}
               height={20}
