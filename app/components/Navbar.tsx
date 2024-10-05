@@ -28,7 +28,7 @@ const Navbar = () => {
             />
           </div>
         </div>
-        <div className="flex gap-8 px-12">
+        <div className="flex gap-8">
           <div className="flex gap-2 items-center">
             <Image
               src="/images/icons/.svg"
