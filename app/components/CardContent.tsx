@@ -60,14 +60,17 @@ export const SecondCard: CardMessage = {
   section_header: "Discover the power of chat marketing",
   section_title: (
     <div className="font-bold">
-      We offer a better way to automate sales, marketing and customer support
+      We offer a better way to automate{" "}
+      <span className="text-[#0a84ff]">sales</span>,{" "}
+      <span className="text-[#7048e8]">marketing</span> and{" "}
+      <span className="text-[#38aa54]">customer support</span>
     </div>
   ),
   section_description:
     "Open your business to the 6+ billion global messaging app users.",
   cards: [
     {
-      card_image: "/images/card/email.png",
+      card_image: "/images/card/3d_speaker.png",
       card_title: (
         <div>
           Supercharge your <span className="text-[#7048e8]">marketing!</span>
@@ -75,15 +78,23 @@ export const SecondCard: CardMessage = {
       ),
       card_description: (
         <div>
-          <li>Lead generation</li>
-          <li>Marketing automation</li>
-          <li>Ai, Logical or hybrid bots</li>
-          <li>Analytics</li>
+          <li style={{ listStyleImage: "url('/images/card/black_check.svg')" }}>
+            Lead generation
+          </li>
+          <li style={{ listStyleImage: "url('/images/card/black_check.svg')" }}>
+            Marketing automation
+          </li>
+          <li style={{ listStyleImage: "url('/images/card/black_check.svg')" }}>
+            Ai, Logical or hybrid bots
+          </li>
+          <li style={{ listStyleImage: "url('/images/card/black_check.svg')" }}>
+            Analytics
+          </li>
         </div>
       ),
     },
     {
-      card_image: "/images/card/sleeping.png",
+      card_image: "/images/card/3d_rocket.png",
       card_title: (
         <div>
           Skyrocket your <span className="text-[#0a84ff]">sales!</span>
@@ -91,10 +102,18 @@ export const SecondCard: CardMessage = {
       ),
       card_description: (
         <div>
-          <li>Advanced CRM</li>
-          <li>Sales automation </li>
-          <li>Ai, Logical or hybrid bots</li>
-          <li>Analytics</li>
+          <li style={{ listStyleImage: "url('/images/card/black_check.svg')" }}>
+            Advanced CRM
+          </li>
+          <li style={{ listStyleImage: "url('/images/card/black_check.svg')" }}>
+            Sales automation{" "}
+          </li>
+          <li style={{ listStyleImage: "url('/images/card/black_check.svg')" }}>
+            Ai, Logical or hybrid bots
+          </li>
+          <li style={{ listStyleImage: "url('/images/card/black_check.svg')" }}>
+            Analytics
+          </li>
         </div>
       ),
     },
@@ -108,10 +127,18 @@ export const SecondCard: CardMessage = {
       ),
       card_description: (
         <div>
-          <li>Website Widget</li>
-          <li>Support automation </li>
-          <li>Ai, Logical or hybrid bots</li>
-          <li>Analytics</li>
+          <li style={{ listStyleImage: "url('/images/card/black_check.svg')" }}>
+            Website Widget
+          </li>
+          <li style={{ listStyleImage: "url('/images/card/black_check.svg')" }}>
+            Support automation{" "}
+          </li>
+          <li style={{ listStyleImage: "url('/images/card/black_check.svg')" }}>
+            Ai, Logical or hybrid bots
+          </li>
+          <li style={{ listStyleImage: "url('/images/card/black_check.svg')" }}>
+            Analytics
+          </li>
         </div>
       ),
     },
