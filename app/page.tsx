@@ -1,6 +1,11 @@
+"use client";
+
 import { FirstCard, SecondCard } from "./components/CardContent";
 import Hero from "./components/Hero";
+import { FirstRollingSection } from "./components/RollingContent";
 import ThreeCards from "./components/ThreeCards";
+import VerticalRollingFixedScreenshot from "./components/VerticalRollingFixedScreenshot";
+import Transition from "./animations/animation";
 
 export default function Home() {
   return (
@@ -9,6 +14,9 @@ export default function Home() {
         <Hero />
         <ThreeCards {...FirstCard} />
         <ThreeCards {...SecondCard} />
+        <Transition>
+          <VerticalRollingFixedScreenshot {...FirstRollingSection} />{" "}
+        </Transition>
       </main>
     </div>
   );

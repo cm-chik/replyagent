@@ -1,10 +1,10 @@
-import { CardMessage } from "@/app/interfaces";
+import { CardSection } from "@/app/interfaces";
 import Image from "next/image";
 import React from "react";
 
-export default function ThreeCards(props: CardMessage) {
+export default function ThreeCards(props: CardSection) {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center h-[100vh]">
       <div className="flex flex-col text-center py-8 align-middle xl:w-[50vw] leading-tight">
         <div>{props.section_header}</div>
         <div className="text-[4rem] font-bold tracking-tight ">
@@ -12,7 +12,7 @@ export default function ThreeCards(props: CardMessage) {
         </div>
         <div>{props.section_description}</div>
       </div>
-      <div className="grid grid-flow-col justify-stretch  gap-[2rem] max-md:space-y-[2rem] w-full">
+      <div className="grid grid-cols-3 justify-center gap-[2rem] max-md:space-y-[2rem]">
         {props.cards.map((card, index) => (
           <div
             key={index}
@@ -27,7 +27,7 @@ export default function ThreeCards(props: CardMessage) {
                 className=""
               />
             </span>
-            <div className="text-2xl font-bold">{card.card_title}</div>
+            <div className="text-3xl font-bold">{card.card_title}</div>
             <div className="text-center">{card.card_description}</div>
           </div>
         ))}

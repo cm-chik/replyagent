@@ -1,5 +1,5 @@
-import { CardMessage } from "@/app/interfaces";
-export const FirstCard: CardMessage = {
+import { CardSection } from "@/app/interfaces";
+export const FirstCard: CardSection = {
   section_header:
     "Your customers are trying to reach you but you are not answering. Why?",
   section_title: (
@@ -56,7 +56,7 @@ export const FirstCard: CardMessage = {
   ],
 };
 
-export const SecondCard: CardMessage = {
+export const SecondCard: CardSection = {
   section_header: "Discover the power of chat marketing",
   section_title: (
     <div className="font-bold">
@@ -77,17 +77,37 @@ export const SecondCard: CardMessage = {
         </div>
       ),
       card_description: (
-        <div>
-          <li style={{ listStyleImage: "url('/images/card/black_check.svg')" }}>
+        <div className="text-start leading-loose">
+          <li
+            style={{
+              listStyleImage: "url('/images/card/black_check.svg')",
+              listStylePosition: "inside",
+            }}
+          >
             Lead generation
           </li>
-          <li style={{ listStyleImage: "url('/images/card/black_check.svg')" }}>
+          <li
+            style={{
+              listStyleImage: "url('/images/card/black_check.svg')",
+              listStylePosition: "inside",
+            }}
+          >
             Marketing automation
           </li>
-          <li style={{ listStyleImage: "url('/images/card/black_check.svg')" }}>
+          <li
+            style={{
+              listStyleImage: "url('/images/card/black_check.svg')",
+              listStylePosition: "inside",
+            }}
+          >
             Ai, Logical or hybrid bots
           </li>
-          <li style={{ listStyleImage: "url('/images/card/black_check.svg')" }}>
+          <li
+            style={{
+              listStyleImage: "url('/images/card/black_check.svg')",
+              listStylePosition: "inside",
+            }}
+          >
             Analytics
           </li>
         </div>
@@ -101,17 +121,37 @@ export const SecondCard: CardMessage = {
         </div>
       ),
       card_description: (
-        <div>
-          <li style={{ listStyleImage: "url('/images/card/black_check.svg')" }}>
+        <div className="text-start leading-loose">
+          <li
+            style={{
+              listStyleImage: "url('/images/card/black_check.svg')",
+              listStylePosition: "inside",
+            }}
+          >
             Advanced CRM
           </li>
-          <li style={{ listStyleImage: "url('/images/card/black_check.svg')" }}>
+          <li
+            style={{
+              listStyleImage: "url('/images/card/black_check.svg')",
+              listStylePosition: "inside",
+            }}
+          >
             Sales automation{" "}
           </li>
-          <li style={{ listStyleImage: "url('/images/card/black_check.svg')" }}>
+          <li
+            style={{
+              listStyleImage: "url('/images/card/black_check.svg')",
+              listStylePosition: "inside",
+            }}
+          >
             Ai, Logical or hybrid bots
           </li>
-          <li style={{ listStyleImage: "url('/images/card/black_check.svg')" }}>
+          <li
+            style={{
+              listStyleImage: "url('/images/card/black_check.svg')",
+              listStylePosition: "inside",
+            }}
+          >
             Analytics
           </li>
         </div>
@@ -126,17 +166,37 @@ export const SecondCard: CardMessage = {
         </div>
       ),
       card_description: (
-        <div>
-          <li style={{ listStyleImage: "url('/images/card/black_check.svg')" }}>
+        <div className="text-start leading-loose">
+          <li
+            style={{
+              listStyleImage: "url('/images/card/black_check.svg')",
+              listStylePosition: "inside",
+            }}
+          >
             Website Widget
           </li>
-          <li style={{ listStyleImage: "url('/images/card/black_check.svg')" }}>
+          <li
+            style={{
+              listStyleImage: "url('/images/card/black_check.svg')",
+              listStylePosition: "inside",
+            }}
+          >
             Support automation{" "}
           </li>
-          <li style={{ listStyleImage: "url('/images/card/black_check.svg')" }}>
+          <li
+            style={{
+              listStyleImage: "url('/images/card/black_check.svg')",
+              listStylePosition: "inside",
+            }}
+          >
             Ai, Logical or hybrid bots
           </li>
-          <li style={{ listStyleImage: "url('/images/card/black_check.svg')" }}>
+          <li
+            style={{
+              listStyleImage: "url('/images/card/black_check.svg')",
+              listStylePosition: "inside",
+            }}
+          >
             Analytics
           </li>
         </div>
