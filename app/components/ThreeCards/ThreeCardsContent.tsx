@@ -1,5 +1,5 @@
-import { CardSection } from "@/app/interfaces";
-export const FirstCard: CardSection = {
+import { ThreeCardsInterface } from "@/app/interfaces";
+export const FirstCard: ThreeCardsInterface = {
   section_header:
     "Your customers are trying to reach you but you are not answering. Why?",
   section_title: (
@@ -56,7 +56,7 @@ export const FirstCard: CardSection = {
   ],
 };
 
-export const SecondCard: CardSection = {
+export const SecondCard: ThreeCardsInterface = {
   section_header: "Discover the power of chat marketing",
   section_title: (
     <div className="font-bold">

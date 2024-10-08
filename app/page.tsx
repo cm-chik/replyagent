@@ -1,11 +1,10 @@
 "use client";
 
-import { FirstCard, SecondCard } from "./components/CardContent";
+import { FirstCard, SecondCard } from "./components/ThreeCards/ThreeCardsContent";
 import Hero from "./components/Hero";
-import { FirstRollingSection } from "./components/RollingContent";
-import ThreeCards from "./components/ThreeCards";
-import VerticalRollingFixedScreenshot from "./components/VerticalRollingFixedScreenshot";
-import Transition from "./animations/animation";
+import { FirstRollingSection } from "./components/Parallax/ParallaxContent";
+import ThreeCards from "./components/ThreeCards/ThreeCards";
+import Parallax from "./components/Parallax/Parallax";
 
 export default function Home() {
   return (
@@ -14,9 +13,7 @@ export default function Home() {
         <Hero />
         <ThreeCards {...FirstCard} />
         <ThreeCards {...SecondCard} />
-        <Transition>
-          <VerticalRollingFixedScreenshot {...FirstRollingSection} />{" "}
-        </Transition>
+        <Parallax {...FirstRollingSection} />{" "}
       </main>
     </div>
   );

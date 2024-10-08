@@ -1,12 +1,12 @@
-import { VerticalRollingCardSection } from "../interfaces";
+import { ParallaxContentInterface } from "@/app/interfaces";
 
-export const FirstRollingSection: VerticalRollingCardSection = {
+export const FirstRollingSection: ParallaxContentInterface = {
   sections: [
     {
-      title: "title",
-      header: "header",
-      description: "description",
-      image: "image",
+      title: "title11",
+      header: "header11",
+      description: "description11",
+      image: "image11",
     },
     {
       title: "title22",
