@@ -5,11 +5,7 @@ const Parallax = (props: ParallaxContentInterface) => {
   return props.sections.map((content, index) => (
     <section key={index} className="relative h-[150vh]">
       <ParallaxImage src={content.image} />
-      <ParallaxWord
-        title={content.title}
-        header={content.header}
-        description={content.description}
-      />
+      {/* <ParallaxWord {...content} /> */}
     </section>
   ));
 };

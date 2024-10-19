@@ -30,8 +30,12 @@ export const ParallaxWord = (
   description: string
 ) => {
   return (
-    <motion.div>
-      {title},{header},{description}
-    </motion.div>
+    <>
+      <motion.div>
+        <p>
+          {title},{header},{description}
+        </p>
+      </motion.div>
+    </>
   );
 };

@@ -5,7 +5,7 @@ import React from "react";
 export default function Hero() {
   return (
     <>
-      <div className="md:grid grid-cols-4  align-middle h-full overflow-hidden space-x-[2rem]">
+      <div className="md:grid grid-cols-4 align-middle h-[100vh] overflow-hidden space-x-[2rem]">
         <div className="left_column | col-span-2 flex flex-col gap-8 align-middle justify-self-center p-[6rem]">
           <p className="text-[4rem] font-bold tracking-tight leading-none text-center ">
             The Chatbot, Automation and CRM platform built for Agencies

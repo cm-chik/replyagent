@@ -9,7 +9,7 @@ import Parallax from "./components/Parallax/Parallax";
 export default function Home() {
   return (
     <div className="font-[family-name:var(--font-geist-sans)] ">
-      <main className="flex flex-col gap-16">
+      <main className="flex flex-col gap-[50vh]">
         <Hero />
         <ThreeCards {...FirstCard} />
         <ThreeCards {...SecondCard} />
