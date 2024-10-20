@@ -1,7 +1,7 @@
-import { ParallaxContentInterface } from "@/app/interfaces";
+import { ParallaxContextsInterface } from "@/app/interfaces";
 
-export const FirstRollingSection: ParallaxContentInterface = {
-  sections: [
+export const ParralaxContexts: ParallaxContextsInterface = {
+  ParallaxContexts: [
     {
       title: "title11",
       header: "header11",

@@ -11,13 +11,13 @@ export interface ThreeCardsInterface {
   cards: CardInterface[];
 }
 
-export interface ParallaxInterface {
+export interface ParallaxContextInterface {
   title: string;
   header: string;
   description: string;
   image: string;
 }
 
-export interface ParallaxContentInterface {
-  sections: ParallaxInterface[];
+export interface ParallaxContextsInterface {
+  ParallaxContexts: ParallaxContextInterface[];
 }

@@ -1,13 +1,17 @@
-import { ParallaxContentInterface } from "@/app/interfaces";
-import { ParallaxImage, ParallaxWord } from "./ParallaxComponent";
+import {
+  ParallaxContextsInterface,
+  ParallaxContextInterface,
+} from "@/app/interfaces";
+import { ParallaxComponent } from "./ParallaxComponent";
 
-const Parallax = (props: ParallaxContentInterface) => {
-  return props.sections.map((content, index) => (
-    <section key={index} className="relative h-[150vh]">
-      <ParallaxImage src={content.image} />
-      {/* <ParallaxWord {...content} /> */}
-    </section>
-  ));
+const Parallax = (props: ParallaxContextsInterface) => {
+  return props.ParallaxContexts!.map(
+    (content: ParallaxContextInterface, index: number) => (
+      <section key={index} className="relative h-[150vh]">
+        <ParallaxComponent {...content} />
+      </section>
+    )
+  );
 };
 
 export default Parallax;

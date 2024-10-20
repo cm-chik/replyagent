@@ -2,9 +2,9 @@
 
 import { FirstCard, SecondCard } from "./components/ThreeCards/ThreeCardsContent";
 import Hero from "./components/Hero";
-import { FirstRollingSection } from "./components/Parallax/ParallaxContent";
 import ThreeCards from "./components/ThreeCards/ThreeCards";
 import Parallax from "./components/Parallax/Parallax";
+import { ParralaxContexts } from "./components/Parallax/ParallaxCopies";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
         <Hero />
         <ThreeCards {...FirstCard} />
         <ThreeCards {...SecondCard} />
-        <Parallax {...FirstRollingSection} />{" "}
+        <Parallax {...ParralaxContexts} />
       </main>
     </div>
   );

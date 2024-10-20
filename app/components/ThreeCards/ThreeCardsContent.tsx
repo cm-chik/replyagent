@@ -117,7 +117,9 @@ export const SecondCard: ThreeCardsInterface = {
       card_image: "/images/card/3d_rocket.png",
       card_title: (
         <div>
-          Skyrocket your <span className="text-[#0a84ff]">sales!</span>
+          Skyrocket your
+          <br />
+          <span className="text-[#0a84ff]">sales!</span>
         </div>
       ),
       card_description: (
