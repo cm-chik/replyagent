@@ -19,5 +19,5 @@ export interface ParallaxContextInterface {
 }
 
 export interface ParallaxContextsInterface {
-  ParallaxContexts: ParallaxContextInterface[];
+  ParallaxContext: ParallaxContextInterface[];
 }
