@@ -10,33 +10,24 @@ import {} from "@/app/interfaces";
 const Parallax = (props: ParallaxContextsInterface) => {
   return props.ParallaxContext!.map(
     (content: ParallaxContextInterface, index: number) => (
-      <div key={index} className="relative h-[10vh] bg-sky-100">
-        <div className="sticky top-0">
-          <motion.div>
-            <StickyImage src={content.image} />
-            <p>
-              {content.title},{content.header},{content.description}
-            </p>
+      <motion.div key={index} className=" sticky top-0 h-[100vh]">
+        <div className="h-[300px]  bg-red-500  mt-[50vh]">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ amount: "all" }}
+            className="ounded-3xl h-[500px]  object-cover"
+          >
+            <Image src={content.image} alt="image" height={100} width={100} />
           </motion.div>
         </div>
-      </div>
+        <p>
+          {content.title},{content.header},{content.description}
+        </p>
+      </motion.div>
     )
   );
 };
 
-const StickyImage = (props: { src: string }) => {
-  return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ amount: "all" }}
-      onViewportEnter={() => console.log("enter")}
-      onViewportLeave={() => console.log("leave")}
-      className=" sticky z-0 rounded-3xl h-[500px]  object-cover -top-[--header-height] "
-    >
-      <Image src={props.src} alt="image" fill className="sticky " />
-    </motion.div>
-  );
-};
 
 export default Parallax;
