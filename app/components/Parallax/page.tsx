@@ -10,9 +10,16 @@ import {} from "@/app/interfaces";
 const Parallax = (props: ParallaxContextsInterface) => {
   return props.ParallaxContext!.map(
     (content: ParallaxContextInterface, index: number) => (
-      <section key={index} className="relative h-[100vh]">
-        <ParallaxContext {...content} />
-      </section>
+      <div key={index} className="relative h-[10vh] bg-sky-100">
+        <div className="sticky top-0">
+          <motion.div>
+            <StickyImage src={content.image} />
+            <p>
+              {content.title},{content.header},{content.description}
+            </p>
+          </motion.div>
+        </div>
+      </div>
     )
   );
 };
@@ -29,21 +36,6 @@ const StickyImage = (props: { src: string }) => {
     >
       <Image src={props.src} alt="image" fill className="sticky " />
     </motion.div>
-  );
-};
-
-const ParallaxContext = (props: ParallaxContextInterface) => {
-  return (
-    <div className="relative flex items-center justify-center">
-      <motion.div>
-        <div className="absolute flex flex-col">
-          <StickyImage src={props.image} />
-          <p>
-            {props.title},{props.header},{props.description}
-          </p>
-        </div>
-      </motion.div>
-    </div>
   );
 };
 
