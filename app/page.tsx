@@ -14,6 +14,7 @@ export default function Home() {
         <ThreeCards {...FirstCard} />
         <ThreeCards {...SecondCard} />
         <Parallax {...ParralaxContext} />
+        <ThreeCards {...FirstCard} />
       </main>
     </div>
   );

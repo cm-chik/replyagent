@@ -14,7 +14,7 @@ export interface ThreeCardsInterface {
 export interface ParallaxContextInterface {
   title: string;
   header: string;
-  description: string;
+  description: React.ReactNode;
   image: string;
 }
 
