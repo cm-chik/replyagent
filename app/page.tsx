@@ -17,7 +17,7 @@ import NineCards from "./components/NineCards/page";
 export default function Home() {
   return (
     <div className="font-[family-name:var(--font-geist-sans)] ">
-      <main className="flex flex-col gap-[40vh]">
+      <main className="flex flex-col gap-[40vh] px-12">
         <Hero />
         <ThreeCards {...FirstCard} />
         <ThreeCards {...SecondCard} />

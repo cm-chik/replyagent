@@ -23,7 +23,7 @@ export default function NineCards(props: CardsInterface) {
                 className=""
               />
             </span>
-            <div className="text-3xl font-bold overflow-hidden">
+            <div className="text-3xl font-bold overflow-hidden text-center">
               {card.card_title}
             </div>
             <div className="text-center">{card.card_description}</div>
