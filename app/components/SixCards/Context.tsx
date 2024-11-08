@@ -9,7 +9,7 @@ export const ChannelCards: CardsInterface = {
     "Did you know that slow customer support costs 70 billion dollars in lost sales every year?",
   cards: [
     {
-      card_image: "/images/card/whatsapp.svg",
+      card_image: "/images/icons/whatsapp.svg",
       card_title: (
         <div>
         Whatsapp
@@ -22,7 +22,7 @@ export const ChannelCards: CardsInterface = {
       ),
     },
     {
-      card_image: "/images/card/instagram.svg",
+      card_image: "/images/icons/instagram.svg",
       card_title: (
         <div>
         Instagram
@@ -35,7 +35,7 @@ export const ChannelCards: CardsInterface = {
       ),
     },
     {
-      card_image: "/images/card/messenger.svg",
+      card_image: "/images/icons/messenger.svg",
       card_title: (
         <div>
           Messenger
@@ -48,7 +48,7 @@ export const ChannelCards: CardsInterface = {
       ),
     },
     {
-      card_image: "/images/card/telegram.svg",
+      card_image: "/images/icons/telegram.svg",
       card_title: (
         <div>
           Telegram
@@ -61,7 +61,7 @@ export const ChannelCards: CardsInterface = {
       ),
     },
     {
-      card_image: "/images/card/sms.svg",
+      card_image: "/images/icons/sms.svg",
       card_title: (
         <div>
          SMS
@@ -74,7 +74,7 @@ export const ChannelCards: CardsInterface = {
       ),
     },
     {
-      card_image: "/images/card/voice.svg",
+      card_image: "/images/icons/voice.svg",
       card_title: (
         <div>
          Voice
@@ -103,7 +103,7 @@ export const SecondCard: CardsInterface = {
     "Open your business to the 6+ billion global messaging app users.",
   cards: [
     {
-      card_image: "/images/card/3d_speaker.png",
+      card_image: "/images/icons/3d_speaker.png",
       card_title: (
         <div>
           Supercharge your <span className="text-[#7048e8]">marketing!</span>
@@ -113,7 +113,7 @@ export const SecondCard: CardsInterface = {
         <div className="text-start leading-loose">
           <li
             style={{
-              listStyleImage: "url('/images/card/black_check.svg')",
+              listStyleImage: "url('/images/icons/black_check.svg')",
               listStylePosition: "inside",
             }}
           >
@@ -121,7 +121,7 @@ export const SecondCard: CardsInterface = {
           </li>
           <li
             style={{
-              listStyleImage: "url('/images/card/black_check.svg')",
+              listStyleImage: "url('/images/icons/black_check.svg')",
               listStylePosition: "inside",
             }}
           >
@@ -129,7 +129,7 @@ export const SecondCard: CardsInterface = {
           </li>
           <li
             style={{
-              listStyleImage: "url('/images/card/black_check.svg')",
+              listStyleImage: "url('/images/icons/black_check.svg')",
               listStylePosition: "inside",
             }}
           >
@@ -137,7 +137,7 @@ export const SecondCard: CardsInterface = {
           </li>
           <li
             style={{
-              listStyleImage: "url('/images/card/black_check.svg')",
+              listStyleImage: "url('/images/icons/black_check.svg')",
               listStylePosition: "inside",
             }}
           >
@@ -147,7 +147,7 @@ export const SecondCard: CardsInterface = {
       ),
     },
     {
-      card_image: "/images/card/3d_rocket.png",
+      card_image: "/images/icons/3d_rocket.png",
       card_title: (
         <div>
           Skyrocket your
@@ -159,7 +159,7 @@ export const SecondCard: CardsInterface = {
         <div className="text-start leading-loose">
           <li
             style={{
-              listStyleImage: "url('/images/card/black_check.svg')",
+              listStyleImage: "url('/images/icons/black_check.svg')",
               listStylePosition: "inside",
             }}
           >
@@ -167,7 +167,7 @@ export const SecondCard: CardsInterface = {
           </li>
           <li
             style={{
-              listStyleImage: "url('/images/card/black_check.svg')",
+              listStyleImage: "url('/images/icons/black_check.svg')",
               listStylePosition: "inside",
             }}
           >
@@ -175,7 +175,7 @@ export const SecondCard: CardsInterface = {
           </li>
           <li
             style={{
-              listStyleImage: "url('/images/card/black_check.svg')",
+              listStyleImage: "url('/images/icons/black_check.svg')",
               listStylePosition: "inside",
             }}
           >
@@ -183,7 +183,7 @@ export const SecondCard: CardsInterface = {
           </li>
           <li
             style={{
-              listStyleImage: "url('/images/card/black_check.svg')",
+              listStyleImage: "url('/images/icons/black_check.svg')",
               listStylePosition: "inside",
             }}
           >
@@ -193,7 +193,7 @@ export const SecondCard: CardsInterface = {
       ),
     },
     {
-      card_image: "/images/card/customer_support.png",
+      card_image: "/images/icons/customer_support.png",
       card_title: (
         <div>
           Deliver amazing customer{" "}
@@ -204,7 +204,7 @@ export const SecondCard: CardsInterface = {
         <div className="text-start leading-loose">
           <li
             style={{
-              listStyleImage: "url('/images/card/black_check.svg')",
+              listStyleImage: "url('/images/icons/black_check.svg')",
               listStylePosition: "inside",
             }}
           >
@@ -212,7 +212,7 @@ export const SecondCard: CardsInterface = {
           </li>
           <li
             style={{
-              listStyleImage: "url('/images/card/black_check.svg')",
+              listStyleImage: "url('/images/icons/black_check.svg')",
               listStylePosition: "inside",
             }}
           >
@@ -220,7 +220,7 @@ export const SecondCard: CardsInterface = {
           </li>
           <li
             style={{
-              listStyleImage: "url('/images/card/black_check.svg')",
+              listStyleImage: "url('/images/icons/black_check.svg')",
               listStylePosition: "inside",
             }}
           >
@@ -228,7 +228,7 @@ export const SecondCard: CardsInterface = {
           </li>
           <li
             style={{
-              listStyleImage: "url('/images/card/black_check.svg')",
+              listStyleImage: "url('/images/icons/black_check.svg')",
               listStylePosition: "inside",
             }}
           >

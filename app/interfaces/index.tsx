@@ -4,6 +4,12 @@ export interface CardInterface {
   card_title: React.ReactNode;
   card_description: React.ReactNode;
 }
+export interface CarouselCardInterface {
+  carousel_row: React.ReactNode;
+  carousel_title: React.ReactNode;
+  carousel_description: React.ReactNode;
+}
+
 
 export interface CardsInterface {
   section_header: string;

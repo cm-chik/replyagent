@@ -9,7 +9,7 @@ export const FirstCard: CardsInterface = {
     "Did you know that slow customer support costs 70 billion dollars in lost sales every year?",
   cards: [
     {
-      card_image: "/images/card/email.png",
+      card_image: "/images/icons/email.png",
       card_title: (
         <div>
           Your old email support system is costing you{" "}
@@ -24,7 +24,7 @@ export const FirstCard: CardsInterface = {
       ),
     },
     {
-      card_image: "/images/card/sleeping.png",
+      card_image: "/images/icons/sleeping.png",
       card_title: (
         <div>
           Do you leave your customers waiting for{" "}
@@ -39,7 +39,7 @@ export const FirstCard: CardsInterface = {
       ),
     },
     {
-      card_image: "/images/card/customer_support.png",
+      card_image: "/images/icons/customer_support.png",
       card_title: (
         <div>
           Customers waiting on social media for{" "}
@@ -70,7 +70,7 @@ export const SecondCard: CardsInterface = {
     "Open your business to the 6+ billion global messaging app users.",
   cards: [
     {
-      card_image: "/images/card/3d_speaker.png",
+      card_image: "/images/icons/3d_speaker.png",
       card_title: (
         <div>
           Supercharge your <span className="text-[#7048e8]">marketing!</span>
@@ -80,7 +80,7 @@ export const SecondCard: CardsInterface = {
         <div className="text-start leading-loose">
           <li
             style={{
-              listStyleImage: "url('/images/card/black_check.svg')",
+              listStyleImage: "url('/images/icons/black_check.svg')",
               listStylePosition: "inside",
             }}
           >
@@ -88,7 +88,7 @@ export const SecondCard: CardsInterface = {
           </li>
           <li
             style={{
-              listStyleImage: "url('/images/card/black_check.svg')",
+              listStyleImage: "url('/images/icons/black_check.svg')",
               listStylePosition: "inside",
             }}
           >
@@ -96,7 +96,7 @@ export const SecondCard: CardsInterface = {
           </li>
           <li
             style={{
-              listStyleImage: "url('/images/card/black_check.svg')",
+              listStyleImage: "url('/images/icons/black_check.svg')",
               listStylePosition: "inside",
             }}
           >
@@ -104,7 +104,7 @@ export const SecondCard: CardsInterface = {
           </li>
           <li
             style={{
-              listStyleImage: "url('/images/card/black_check.svg')",
+              listStyleImage: "url('/images/icons/black_check.svg')",
               listStylePosition: "inside",
             }}
           >
@@ -114,7 +114,7 @@ export const SecondCard: CardsInterface = {
       ),
     },
     {
-      card_image: "/images/card/3d_rocket.png",
+      card_image: "/images/icons/3d_rocket.png",
       card_title: (
         <div>
           Skyrocket your
@@ -126,7 +126,7 @@ export const SecondCard: CardsInterface = {
         <div className="text-start leading-loose">
           <li
             style={{
-              listStyleImage: "url('/images/card/black_check.svg')",
+              listStyleImage: "url('/images/icons/black_check.svg')",
               listStylePosition: "inside",
             }}
           >
@@ -134,7 +134,7 @@ export const SecondCard: CardsInterface = {
           </li>
           <li
             style={{
-              listStyleImage: "url('/images/card/black_check.svg')",
+              listStyleImage: "url('/images/icons/black_check.svg')",
               listStylePosition: "inside",
             }}
           >
@@ -142,7 +142,7 @@ export const SecondCard: CardsInterface = {
           </li>
           <li
             style={{
-              listStyleImage: "url('/images/card/black_check.svg')",
+              listStyleImage: "url('/images/icons/black_check.svg')",
               listStylePosition: "inside",
             }}
           >
@@ -150,7 +150,7 @@ export const SecondCard: CardsInterface = {
           </li>
           <li
             style={{
-              listStyleImage: "url('/images/card/black_check.svg')",
+              listStyleImage: "url('/images/icons/black_check.svg')",
               listStylePosition: "inside",
             }}
           >
@@ -160,7 +160,7 @@ export const SecondCard: CardsInterface = {
       ),
     },
     {
-      card_image: "/images/card/customer_support.png",
+      card_image: "/images/icons/customer_support.png",
       card_title: (
         <div>
           Deliver amazing customer{" "}
@@ -171,7 +171,7 @@ export const SecondCard: CardsInterface = {
         <div className="text-start leading-loose">
           <li
             style={{
-              listStyleImage: "url('/images/card/black_check.svg')",
+              listStyleImage: "url('/images/icons/black_check.svg')",
               listStylePosition: "inside",
             }}
           >
@@ -179,7 +179,7 @@ export const SecondCard: CardsInterface = {
           </li>
           <li
             style={{
-              listStyleImage: "url('/images/card/black_check.svg')",
+              listStyleImage: "url('/images/icons/black_check.svg')",
               listStylePosition: "inside",
             }}
           >
@@ -187,7 +187,7 @@ export const SecondCard: CardsInterface = {
           </li>
           <li
             style={{
-              listStyleImage: "url('/images/card/black_check.svg')",
+              listStyleImage: "url('/images/icons/black_check.svg')",
               listStylePosition: "inside",
             }}
           >
@@ -195,12 +195,63 @@ export const SecondCard: CardsInterface = {
           </li>
           <li
             style={{
-              listStyleImage: "url('/images/card/black_check.svg')",
+              listStyleImage: "url('/images/icons/black_check.svg')",
               listStylePosition: "inside",
             }}
           >
             Analytics
           </li>
+        </div>
+      ),
+    },
+  ],
+};
+
+export const GetStartedCard: CardsInterface = {
+  section_header:
+    "",
+  section_title: (
+    <div>Get Started <br/>with Reply Agent</div>
+  ),
+  section_description:
+    "Join us at no cost, start learning and let the results speak for themselves!",
+  cards: [
+    {
+      card_image: "/images/icons/3d_rocket.png",
+      card_title: (
+        <div>
+          Step 1
+        </div>
+      ),
+      card_description: (
+        <div>
+        Create your <b>Free account</b> today, absolutely risk-free, no credit card info required, zero pressure.
+        </div>
+      ),
+    },
+    {
+      card_image: "/images/icons/SMS_icon.png",
+      card_title: (
+        <div>
+          Step 2
+        </div>
+      ),
+      card_description: (
+        <div>
+          Integrate your messaging accounts and create a Chat Marketing campaign that's uniquely yours, all in <b>less than 5 minutes</b>.
+        </div>
+      ),
+    },
+    {
+      card_image: "/images/icons/Results.svg",
+      card_title: (
+        <div>
+         Step 3
+        </div>
+      ),
+      card_description: (
+        <div>
+         Put your social media game to work and watch the conversions, sales, and customers <b>chat</b>isfaction skyrocket!
         </div>
       ),
     },

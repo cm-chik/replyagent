@@ -11,17 +11,17 @@ const CarouselParallax = (props: CarouselParallaxContextsInterface) => {
     <div className="relative">
       {props.CarouselParallaxContext!.map(
         (content: CarouselParallaxContextInterface, index: number) => (
-          <div className="flex flex-col bg-green-600 text-white items-center">
-            <AnimatePresence>
-              {/* <motion.div
-                key={index}
-                className="sticky top-0"
-                whileInView={{ opacity: 1 }}
-                initial={{ opacity: 0 }}
-                exit={{ opacity: 0 }}
-              > */}
+          <div className="flex flex-col bg-green-600 text-white items-center" key={index}>
+            <AnimatePresence >
+              <motion.div
+                  className="title"
+                  initial={{ x: '100%', opacity: 1 }}
+                  whileInView={{ x: '0%', opacity: 1 }}
+                  exit={{x:'-100%',opacity: 0 }}
+                  transition={{ duration: 1 }}
+                >
             <div className="text-[14rem] font-bold">{content.title}</div>
-              {/* </motion.div> */}
+              </motion.div>
             </AnimatePresence>
             <div className="grid grid-flow-row grid-cols-[500px_auto] gap-x-[4rem] gap-y-[2rem] px-[10rem] py-[3rem]">
               <div className=" text-[3.6rem] font-bold leading-none">

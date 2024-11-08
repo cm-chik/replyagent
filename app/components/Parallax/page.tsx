@@ -11,15 +11,15 @@ const Parallax = (props: ParallaxContextsInterface) => {
     <div className="relative">
       {props.ParallaxContext!.map(
         (content: ParallaxContextInterface, index: number) => (
-          <AnimatePresence>
+          <AnimatePresence key={index}>
             <motion.div
               key={index}
-              className="h-screen sticky top-0 flex justify-between align-middle items-center bg-white px-[20rem] space-x-[10rem]"
+              className="h-screen w-screen sticky top-0 grid grid-cols-[2fr_1fr] bg-white gap-[10rem] px-[20rem] "
               whileInView={{ opacity: 1 }}
               initial={{ opacity: 0 }}
               exit={{ opacity: 0 }}
             >
-              <div className="w-[550px] object-cover flex flex-col justify-center space-y-4 ">
+              <div className="object-cover flex flex-col justify-center space-y-4">
                 <div>{content.title}</div>
                 <div className="text-[3.6rem] font-bold leading-none">
                   {content.header}
