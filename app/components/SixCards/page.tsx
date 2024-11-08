@@ -4,11 +4,13 @@ import React from "react";
 
 export default function SixCards(props: CardsInterface) {
   return (
-    <div className="space-y-[2rem]">
-        <div className="text-[5rem] font-bold tracking-tighter py-2">
+    <div className="space-y-[2rem] px-12 ">
+        <div className="text-[5rem] font-bold tracking-tighter py-2 text-center leading-none">
           {props.section_header}
         </div>
-      <div className="grid px-[20rem] grid-cols-3 grid-rows-2  gap-[2rem]">
+      <div className="px-10  md:px-[12rem]"> { props.section_description}
+        </div>
+      <div className="md:grid px-12 grid-cols-3 grid-rows-2 gap-[2rem] max-md:space-y-[2rem]">
         {props.cards.map((card, index) => (
           <div
             key={index}

@@ -4,11 +4,11 @@ import React from "react";
 
 export default function NineCards(props: CardsInterface) {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center px-12  text-center">
       <div className="text-[4rem] font-bold tracking-tighter py-2">
         {props.section_header}
       </div>
-      <div className="grid justify-items-center grid-cols-3 grid-rows-2 gap-[2rem]">
+      <div className="md:grid justify-items-center grid-cols-3 px-12 grid-rows-2 gap-[2rem]">
         {props.cards.map((card, index) => (
           <div
             key={index}

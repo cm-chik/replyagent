@@ -5,8 +5,8 @@ import AnimatedButton from "../AnimatedButton";
 
 export default function ThreeCards(props: CardsInterface) {
   return (
-    <div className="flex flex-col items-center">
-      <div className="flex flex-col text-center w-[50rem] leading-[4rem]">
+    <div className="flex flex-col items-center px-12">
+      <div className="flex flex-col text-center leading-[4rem]">
         <div>{props.section_header}</div>
         <div className="text-[4rem] font-bold tracking-tighter py-2">
           {props.section_title}
@@ -41,7 +41,7 @@ export default function ThreeCards(props: CardsInterface) {
 
 export function ThreeCardsWithButton(props: CardsInterface) {
   return (
-    <div className="flex flex-col items-center gap-y-[2rem]">
+    <div className="flex flex-col items-center gap-y-[2rem] px-12 pb-12">
         <div className="text-[4rem] font-bold tracking-tighter leading-none py-2 text-center">
           {props.section_title}
         </div>
