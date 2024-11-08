@@ -1,5 +1,5 @@
 import Image from "next/image";
-import TryItFreeButton from "./TryItFreeButton";
+import AnimatedButton from "./AnimatedButton";
 import React from "react";
 
 export default function Hero() {
@@ -30,7 +30,7 @@ export default function Hero() {
               </div>
             ))}
           </div>
-          <TryItFreeButton />
+          <AnimatedButton title="Try it FREE!" icon="/images/icons/cart.svg" />
         </div>
         <div className="right_column_col_1 | col-span-1">
           {[

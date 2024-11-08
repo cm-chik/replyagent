@@ -1,6 +1,6 @@
 import { ParallaxContextsInterface } from "@/app/interfaces";
 
-export const ParralaxContext: ParallaxContextsInterface = {
+export const ParallaxContexts: ParallaxContextsInterface = {
   ParallaxContext: [
     {
       title: "Increase lead generation",
@@ -16,16 +16,22 @@ export const ParralaxContext: ParallaxContextsInterface = {
       image: "/images/parallax/01_anna.png",
     },
     {
-      title: "title2",
-      header: "header2",
-      description: "description2",
+      title: "Faster responses",
+      header: "AI-powered instant replies to every message, 24/7 on autopilot!",
+      description: "Be lightning-quick to respond to every lead, no matter which messaging channel they choose. It's the lightning-fast way to win customers faster than ever and never drop a potential lead!",
       image: "/images/parallax/02_pizza.svg",
     },
     {
-      title: "title3",
-      header: "header3",
-      description: "description3",
+      title: "Increase customer satisfaction",
+      header: "Skyrocket customer satisfaction while cutting costs",
+      description: "Don't want to dig into your pockets for new hires? No worries! Automate those customer requests and provide fast responses to your customers questions, while keeping everyone happy and on budget.",
       image: "/images/parallax/03_bike.svg",
+    },
+    {
+      title: "Increase in sales conversion",
+      header: "Increase your conversion rate by up to 89%",
+      description: "Why complicate things? Our hybrid chatbot lets customers shop, order, and set up meetings effortlessly, all through their favorite messaging app!",
+      image: "/images/parallax/04_restaurant.svg",
     },
   ],
 };

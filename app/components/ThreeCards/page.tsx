@@ -1,8 +1,8 @@
-import { ThreeCardsInterface } from "@/app/interfaces";
+import { CardsInterface } from "@/app/interfaces";
 import Image from "next/image";
 import React from "react";
 
-export default function ThreeCards(props: ThreeCardsInterface) {
+export default function ThreeCards(props: CardsInterface) {
   return (
     <div className="flex flex-col items-center">
       <div className="flex flex-col text-center w-[50rem] leading-[4rem]">

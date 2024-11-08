@@ -1,10 +1,14 @@
 "use client";
 
 import { FirstCard, SecondCard } from "./components/ThreeCards/Context";
+import { ChannelCards } from "./components/SixCards/Context";
 import Hero from "./components/Hero";
 import ThreeCards from "./components/ThreeCards/page";
 import Parallax from "./components/Parallax/page";
-import { ParralaxContext } from "./components/Parallax/Context";
+import { ParallaxContexts } from "./components/Parallax/Context";
+import { CarouselParallaxContexts } from "./components/CarouselParallax/Context";
+import SixCards from "./components/SixCards/page";
+import CarouselParallax from "./components/CarouselParallax/page";
 
 export default function Home() {
   return (
@@ -13,8 +17,9 @@ export default function Home() {
         <Hero />
         <ThreeCards {...FirstCard} />
         <ThreeCards {...SecondCard} />
-        <Parallax {...ParralaxContext} />
-        <ThreeCards {...FirstCard} />
+        <Parallax {...ParallaxContexts} />
+        <SixCards {...ChannelCards} /> 
+        <CarouselParallax {...CarouselParallaxContexts}/>
       </main>
     </div>
   );

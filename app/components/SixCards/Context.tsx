@@ -1,55 +1,88 @@
 import { CardsInterface } from "@/app/interfaces";
-export const FirstCard: CardsInterface = {
+export const ChannelCards: CardsInterface = {
   section_header:
-    "Your customers are trying to reach you but you are not answering. Why?",
+    "Meet your customers in the apps they already use",
   section_title: (
-    <div className="font-bold">Slow customer support is costing you sales!</div>
+    <div>Customers live, breathe, and chat on these apps daily. So, why not make their lives easier when they need to get in touch with you? <b>Reply Agent</b> is extremely easy to integrate these messaging apps into your sales, marketing, and customer support strategy. It's like rolling out a red carpet to your customers, all on the messaging platforms they already use and love."</div>
   ),
   section_description:
     "Did you know that slow customer support costs 70 billion dollars in lost sales every year?",
   cards: [
     {
-      card_image: "/images/card/email.png",
+      card_image: "/images/card/whatsapp.svg",
       card_title: (
         <div>
-          Your old email support system is costing you{" "}
-          <span className="text-[#7048e8]">sales!</span>
+        Whatsapp
         </div>
       ),
       card_description: (
         <div>
-          Ditch your old email support system which slows down support,
-          frustrates your customers and <b>costs you sales</b>.
+         Integration with WhatsApp Business API (Official) and QR code.
         </div>
       ),
     },
     {
-      card_image: "/images/card/sleeping.png",
+      card_image: "/images/card/instagram.svg",
       card_title: (
         <div>
-          Do you leave your customers waiting for{" "}
-          <span className="text-[#0a84ff]">answers?</span>
+        Instagram
         </div>
       ),
       card_description: (
         <div>
-          How long would it take for your customers to receive an answer to a
-          simple question at 11 PM on a Saturday?
+          Direct message, automate tasks, and customer support on Instagram.
         </div>
       ),
     },
     {
-      card_image: "/images/card/customer_support.png",
+      card_image: "/images/card/messenger.svg",
       card_title: (
         <div>
-          Customers waiting on social media for{" "}
-          <span className="text-[#38aa54]">support?</span>
+          Messenger
         </div>
       ),
       card_description: (
         <div>
-          Embrace the future of AI-driven <b>automated customer support </b> in
-          modern messaging apps, available 24/7.
+         Chat, automate tasks, and customer support on Messenger.
+        </div>
+      ),
+    },
+    {
+      card_image: "/images/card/telegram.svg",
+      card_title: (
+        <div>
+          Telegram
+        </div>
+      ),
+      card_description: (
+        <div>
+         Chat, automate tasks, and customer support on Telegram.
+        </div>
+      ),
+    },
+    {
+      card_image: "/images/card/sms.svg",
+      card_title: (
+        <div>
+         SMS
+        </div>
+      ),
+      card_description: (
+        <div>
+         Chat, automate tasks, and customer support on Messenger.
+        </div>
+      ),
+    },
+    {
+      card_image: "/images/card/voice.svg",
+      card_title: (
+        <div>
+         Voice
+        </div>
+      ),
+      card_description: (
+        <div>
+         Chat, automate tasks, and customer support on Messenger.
         </div>
       ),
     },

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import TryItFreeButton from "./TryItFreeButton";
+import AnimatedButton from "./AnimatedButton";
 const Navbar = () => {
   return (
     <>
@@ -39,7 +39,7 @@ const Navbar = () => {
             />
             <button>EN</button>
           </div>
-          <TryItFreeButton />
+          <AnimatedButton title="Try it FREE!" icon="/images/icons/cart.svg" />
         </div>
       </div>
     </>
