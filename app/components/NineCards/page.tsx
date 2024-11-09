@@ -4,7 +4,7 @@ import React from "react";
 
 export default function NineCards(props: CardsInterface) {
   return (
-    <div className="flex flex-col items-center px-12  text-center">
+    <div className="flex flex-col items-center px-12 py-[20vh] text-center">
       <div className="text-[4rem] font-bold tracking-tighter py-2">
         {props.section_header}
       </div>
