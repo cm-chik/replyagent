@@ -21,7 +21,7 @@ const CarouselCardContext: CarouselCardInterface = {
       carousel_word: "WhatsApp",
     },
     {
-      carousel_image: "/images/icons/cal.com",
+      carousel_image: "/images/icons/calcom.png",
       carousel_word: "Cal.com",
     },
     {

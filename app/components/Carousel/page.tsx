@@ -15,19 +15,20 @@ const CarouselCard = (props: CarouselCardInterface) => {
         </div>
         <div className="flex w-[100%] max-md:flex-col justify-center gap-[2rem] max-md:space-y-[2rem] px-10">
           <motion.div
-            animate={{ x: ["0%", "-100%"] }}
-            transition={{ duration: 40, ease: "linear", repeat: Infinity }}
+            animate={{ x: ["10%", "-100%"] }}
+            transition={{ duration: 2, ease: "linear", repeat: Infinity }}
             style={{ display: "inline-block" }} // Ensure the content is inline for horizontal scrolling
           >
-            <div className="flex gap-2  space-x-[4rem] justify-center items-center">
+            <div className="flex gap-[4rem]">
+            <div className=" flex gap-[2rem]  space-x-[4rem] justify-center items-center">
               {props.carousel_row.map((item, index) => (
                 <div
                   key={index}
-                  className="flex flex-col space-y-[3rem]"
+                  className="flex flex-col space-y-[5rem]"
                   style={{
                     position: "relative",
-                    width: "40px",
-                    height: "40px",
+                    width: "4rem",
+                    height: "4rem",
                   }}
                 >
                   <Image
@@ -36,12 +37,83 @@ const CarouselCard = (props: CarouselCardInterface) => {
                     fill
                     style={{ objectFit: "contain" }}
                   />
-                  <div className="text-[0.5rem] leading-none w-[40px] text-center">
+                  <div className="text-[0.8rem] leading-none w-[4rem]">
                     {item.carousel_word}
                   </div>
                 </div>
               ))}
             </div>
+            <div className="  flex gap-2  space-x-[4rem] justify-center items-center">
+              {props.carousel_row.map((item, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col space-y-[5rem]"
+                  style={{
+                    position: "relative",
+                    width: "4rem",
+                    height: "4rem",
+                  }}
+                >
+                  <Image
+                    src={item.carousel_image}
+                    alt={item.carousel_word}
+                    fill
+                    style={{ objectFit: "contain" }}
+                  />
+                  <div className="text-[0.8rem] leading-none w-[4rem]">
+                    {item.carousel_word}
+                  </div>
+                </div>
+              ))}
+              </div>
+            <div className="  flex gap-2  space-x-[4rem] justify-center items-center">
+              {props.carousel_row.map((item, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col space-y-[5rem]"
+                  style={{
+                    position: "relative",
+                    width: "4rem",
+                    height: "4rem",
+                  }}
+                >
+                  <Image
+                    src={item.carousel_image}
+                    alt={item.carousel_word}
+                    fill
+                    style={{ objectFit: "contain" }}
+                  />
+                  <div className="text-[0.8rem] leading-none w-[4rem]">
+                    {item.carousel_word}
+                  </div>
+                </div>
+              ))}
+              </div>
+            <div className="  flex gap-2  space-x-[4rem] justify-center items-center">
+              {props.carousel_row.map((item, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col space-y-[5rem]"
+                  style={{
+                    position: "relative",
+                    width: "4rem",
+                    height: "4rem",
+                  }}
+                >
+                  <Image
+                    src={item.carousel_image}
+                    alt={item.carousel_word}
+                    fill
+                    style={{ objectFit: "contain" }}
+                  />
+                  <div className="text-[0.8rem] leading-none w-[4rem]">
+                    {item.carousel_word}
+                  </div>
+                </div>
+              ))}
+              </div>
+              
+              </div>
           </motion.div>
         </div>
       </div>
