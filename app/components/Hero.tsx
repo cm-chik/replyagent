@@ -5,8 +5,8 @@ import React from "react";
 export default function Hero() {
   return (
     <>
-      <div className="md:grid grid-cols-4 align-middle h-[100vh] overflow-hidden space-x-[2rem]  px-12">
-        <div className="left_column | col-span-2 flex flex-col gap-8 align-middle justify-self-center p-[6rem]">
+      <div className="md:grid grid-cols-4 grid-flow-row align-middle h-[100vh] space-x-[2rem] px-12">
+        <div className="left_column | row-span-6 col-span-2 flex flex-col gap-8 align-middle justify-self-center p-[6rem]">
           <p className="text-[4rem] font-bold tracking-tight leading-none text-center ">
             The Chatbot, Automation and CRM platform built for Agencies
           </p>
@@ -29,37 +29,35 @@ export default function Hero() {
                 <Image src={path} alt={`Icon ${index + 1}`} fill />
               </div>
             ))}
-          </div>
+            </div>
           <AnimatedButton title="Try it FREE!" icon="/images/icons/cart.svg" />
         </div>
-        <div className="right_column_col_1 | col-span-1">
+        <div className="row-span-6 col-span-1 grid-rows-subgrid space-y-[5px] overflow-hidden">
           {[
             "/images/message/telegram yoga message.svg",
             "/images/message/whatsapp birthday messages.svg",
             "/images/message/messenger delivery tracking.svg",
             "/images/message/telegram bike shop.svg",
             "/images/message/instagram chat agent.svg",
-            "/images/message/messenger chat agent.svg",
+          "/images/message/messenger chat agent.svg",
           ].map((path, index) => (
             <div
               key={index}
-              className=" wrapper | relative inline-bloc my-6 h-[70%] max-h-[70%] min-w-0 bottom-[30%]"
+              className="mt-[-10%] row-span-1 col-span-1"
+              style={{
+                width: "50%",
+                height: "auto",
+                  }}
             >
-              <Image
+              
+              <img
                 src={path}
                 alt={`Image ${index + 1}`}
-                className="inset-0"
-                fill
-                style={{
-                  objectFit: "fill",
-                  inset: "0",
-                  position: "absolute",
-                }}
               />
             </div>
           ))}
         </div>
-        <div className="right_column_col_2 | col-span-1 flex-col inline-block">
+        <div className="row-span-6 col-span-1 grid-rows-subgrid space-y-[5px] overflow-hidden">
           {[
             "/images/message/dbf_converter.svg",
             "/images/message/telegram bike shop.svg",
@@ -70,17 +68,16 @@ export default function Hero() {
           ].map((path, index) => (
             <div
               key={index}
-              className=" wrapper | relative inline-bloc my-6 h-[70%] max-h-[70%] min-w-0"
+              className="row-span-1 col-span-1"
+              style={{
+                width: "50%",
+                height: "auto",
+                  }}
             >
-              <Image
+              
+              <img
                 src={path}
                 alt={`Image ${index + 1}`}
-                className="inset-0"
-                fill
-                style={{
-                  objectFit: "fill",
-                  position: "absolute",
-                }}
               />
             </div>
           ))}

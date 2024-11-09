@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="w-full flex justify-between items-center row-screen p-4 bg-white ">
         <div className="flex justify-normal gap-12 items-center row-screen p-4">
           <Image
-            src="/images/logo.png"
+            src="/images/logo/logo_dark.png"
             alt="logo"
             width={180}
             height={40}
