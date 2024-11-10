@@ -11,7 +11,7 @@ const CarouselParallax = (props: CarouselParallaxContextsInterface) => {
     <div className="relative">
       {props.CarouselParallaxContext!.map(
         (content: CarouselParallaxContextInterface, index: number) => (
-          <div className="flex flex-col bg-green-600 text-white items-center px-12" key={index}>
+          <div className="flex flex-col bg-green-600 text-white  px-12" key={index}>
             <AnimatePresence >
               <motion.div
                   className="title"
@@ -20,15 +20,16 @@ const CarouselParallax = (props: CarouselParallaxContextsInterface) => {
                   exit={{x:'-100%',opacity: 0 }}
                   transition={{ duration: 1 }}
                 >
-            <div className="text-[14rem] font-bold">{content.title}</div>
+            <div className="text-[8rem] font-bold px-[2rem]">{content.title}</div>
               </motion.div>
             </AnimatePresence>
-            <div className="grid grid-flow-row grid-cols-2 gap-x-[4rem] gap-y-[2rem] px-[10rem] py-[3rem]">
-              <div className=" text-[3.6rem] font-bold leading-none">
+            <div className="grid grid-flow-row grid-cols-[auto_1fr] gap-x-[4rem] gap-y-[2rem] px-[10rem] py-[3rem] justify-items-center">
+              <div className=" text-[2rem] font-bold leading-none row-span-1">
                 {content.header}
               </div>
-              <Image src={content.section_icon} alt="section_image" height={0} width={80} className="row-span-2" />
-              <div className="row-span-1 col-span-2">
+
+              <Image src={content.section_icon} alt="section_image" height={0} width={80} className="row-span-1" />
+              <div className="col-span-2">
                 {content.description}
               </div>
             </div>
