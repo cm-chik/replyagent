@@ -238,7 +238,7 @@ export const GetStartedCard: CardsInterface = {
       ),
       card_description: (
         <div>
-          Integrate your messaging accounts and create a Chat Marketing campaign that's uniquely yours, all in <b>less than 5 minutes</b>.
+          Integrate your messaging accounts and create a Chat Marketing campaign that&apos;s uniquely yours, all in <b>less than 5 minutes</b>.
         </div>
       ),
     },

@@ -3,10 +3,10 @@ export const ChannelCards: CardsInterface = {
   section_header:
     "Meet your customers in the apps they already use",
   section_title: (
-    <div>Customers live, breathe, and chat on these apps daily. So, why not make their lives easier when they need to get in touch with you? <b>Reply Agent</b> is extremely easy to integrate these messaging apps into your sales, marketing, and customer support strategy. It's like rolling out a red carpet to your customers, all on the messaging platforms they already use and love."</div>
+    <></>
   ),
   section_description:
-    "Customers live, breathe, and chat on these apps daily. So, why not make their lives easier when they need to get in touch with you? Reply Agent is extremely easy to integrate these messaging apps into your sales, marketing, and customer support strategy. It's like rolling out a red carpet to your customers, all on the messaging platforms they already use and love.",
+    "Customers live, breathe, and chat on these apps daily. So, why not make their lives easier when they need to get in touch with you? Reply Agent is extremely easy to integrate these messaging apps into your sales, marketing, and customer support strategy. It\'s like rolling out a red carpet to your customers, all on the messaging platforms they already use and love.",
   cards: [
     {
       card_image: "/images/icons/whatsapp.svg",

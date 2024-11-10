@@ -39,11 +39,11 @@ export default function Hero() {
             "/images/message/messenger delivery tracking.svg",
             "/images/message/telegram bike shop.svg",
             "/images/message/instagram chat agent.svg",
-          "/images/message/messenger chat agent.svg",
+            "/images/message/messenger chat agent.svg",
           ].map((path, index) => (
             <div
               key={index}
-              className="mt-[-10%] row-span-1 col-span-1"
+              className="mt-[-50%] row-span-1 col-span-1"
               style={{
                 width: "50%",
                 height: "auto",

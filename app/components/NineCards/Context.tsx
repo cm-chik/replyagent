@@ -80,7 +80,7 @@ export const WhyReplyAgent: CardsInterface = {
       ),
       card_description: (
         <div>
-          Unlike others, ReplyAgent BRANDS your workspaces!  Customize logos, domains & colors for each client. They'll think it's a custom system built just for them!
+          Unlike others, ReplyAgent BRANDS your workspaces!  Customize logos, domains & colors for each client. They&apos;ll think it&apos;s a custom system built just for them!
         </div>
       ),
     },
@@ -119,7 +119,7 @@ export const WhyReplyAgent: CardsInterface = {
       ),
       card_description: (
         <div>
-          With ReplyAgent you don't need to juggle different tools to create a professional automation. An Ai Chatbot in WhatsApp takes just 5 mins to create in ReplyAgent!
+          With ReplyAgent you don&apos;t need to juggle different tools to create a professional automation. An Ai Chatbot in WhatsApp takes just 5 mins to create in ReplyAgent!
         </div>
       ),
     },

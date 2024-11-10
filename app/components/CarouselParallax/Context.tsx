@@ -36,7 +36,7 @@ export const CarouselParallaxContexts: CarouselParallaxContextsInterface = {
       header: "Smart Flow builder",
       description: (
         <div>
-        Build personalized, automated chats, responses, actions, and even add some fancy conditional logic – all in a snap. It's like a magic wand for saving time, boosting customer happiness, and ramping up those sales. 🚀📱😄
+        Build personalized, automated chats, responses, actions, and even add some fancy conditional logic &ndash; all in a snap. It&apos;s like a magic wand for saving time, boosting customer happiness, and ramping up those sales. 🚀📱😄
         </div>
       ),
       image: "/images/screenshot/02_automation.png",
