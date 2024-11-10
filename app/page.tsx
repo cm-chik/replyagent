@@ -9,7 +9,7 @@ import { ParallaxContexts } from "./components/Parallax/Context";
 import { CarouselParallaxContexts } from "./components/CarouselParallax/Context";
 import SixCards from "./components/SixCards/SixCards";
 import CarouselParallax from "./components/CarouselParallax/CarouselParallax";
-import CarouselCard from "./components/Carousel/carousel";
+import CarouselCard from "./components/Carousel/Carousel";
 import CarouselCardContext from "./components/Carousel/Context";
 import { WhyReplyAgent } from "./components/NineCards/Context";
 import NineCards from "./components/NineCards/NineCards";

@@ -8,7 +8,7 @@ import type {
 
 const Parallax = (props: ParallaxContextsInterface) => {
   return (
-    <div className="px-12 relative">
+    <div className="px-12 py-[4rem] relative gap-[4rem]">
       {props.ParallaxContext!.map(
         (content: ParallaxContextInterface, index: number) => (
           <AnimatePresence key={index}>
@@ -19,16 +19,15 @@ const Parallax = (props: ParallaxContextsInterface) => {
               initial={{ opacity: 0 }}
               exit={{ opacity: 0 }}
             >
-              <div className="object-cover flex flex-col justify-center space-y-4">
+              <div className="object-cover flex flex-col justify-center space-4 ">
                 <div>{content.title}</div>
                 <div className="text-[3.6rem] font-bold leading-none">
                   {content.header}
                 </div>
                 <div>{content.description}</div>
               </div>
-
-              <div className="self-center align-middle" >
-                <Image src={content.image} alt="image" height={600} width={400} />
+              <div className="self-center align-middle " style={{height: "600px", width: "400px"}} >
+                <Image src={content.image} alt="image" width={300} height={0}  />
               </div>
             </motion.div>
           </AnimatePresence>

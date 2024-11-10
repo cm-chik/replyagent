@@ -5,10 +5,10 @@ import React from "react";
 export default function Hero() {
   return (
     <>
-      <div className="md:grid grid-cols-4 grid-flow-row align-middle h-[100vh] space-x-[2rem] px-12">
+      <div className="md:grid grid-cols-4 grid-flow-row align-middle h-[100vh] space-x-[6rem] px-12">
         <div className="left_column | row-span-6 col-span-2 flex flex-col gap-8 align-middle justify-self-center p-[6rem]">
           <p className="text-[4rem] font-bold tracking-tight leading-none text-center ">
-            The Chatbot, Automation and CRM platform built for Agencies
+            The Best Platform to Build and Sell AI Agents
           </p>
           <p className="text-[1.125rem]">
             If you&apos;re a professional offering Chatbots, Automation, and CRM
@@ -25,14 +25,14 @@ export default function Hero() {
               "/images/icons/call.svg",
               "/images/icons/sms.svg",
             ].map((path, index) => (
-              <div key={index} className="relative w-[25px] h-[100%] ">
+              <div key={index} className="relative w-[35px] h-[100%] ">
                 <Image src={path} alt={`Icon ${index + 1}`} fill />
               </div>
             ))}
             </div>
           <AnimatedButton title="Try it FREE!" icon="/images/icons/cart.svg" />
         </div>
-        <div className="row-span-6 col-span-1 grid-rows-subgrid space-y-[5px] overflow-hidden">
+        <div className="row-span-6 col-span-1 grid-rows-subgrid space-y-[5px] overflow-hidden  h-[100vh]">
           {[
             "/images/message/telegram yoga message.svg",
             "/images/message/whatsapp birthday messages.svg",
@@ -45,7 +45,7 @@ export default function Hero() {
               key={index}
               className="mt-[-50%] row-span-1 col-span-1"
               style={{
-                width: "50%",
+                width: "auto",
                 height: "auto",
                   }}
             >
@@ -70,7 +70,7 @@ export default function Hero() {
               key={index}
               className="row-span-1 col-span-1"
               style={{
-                width: "50%",
+                width: "auto",
                 height: "auto",
                   }}
             >

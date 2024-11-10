@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const CarouselCard: React.FC<CarouselCardInterface> = (props) => {
   return (
-    <div className="px-12 pt-[20vh]">
+    <div className="px-12 py-[12rem]">
       <div className="flex flex-col text-center leading-[4rem] space-y-[4rem]">
         <div className="text-[4rem] font-bold tracking-tighter py-2 ">
           {props.carousel_title}

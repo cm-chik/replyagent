@@ -4,7 +4,7 @@ import React from "react";
 
 export default function SixCards(props: CardsInterface) {
   return (
-    <div className="space-y-[2rem] px-12 py-[40vh]">
+    <div className="space-y-[2rem] px-12 py-[4rem]">
         <div className="text-[5rem] font-bold tracking-tighter py-2 text-center leading-none">
           {props.section_header}
         </div>
