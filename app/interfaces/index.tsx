@@ -3,14 +3,11 @@ export interface CardInterface {
   card_title: React.ReactNode;
   card_description: React.ReactNode;
 }
-
-export interface CarouselRowInterface {
-  carousel_image: string;
-  carousel_word: string;
-}
-
 export interface CarouselCardInterface {
-  carousel_row: CarouselRowInterface[];
+  carousel_row: Array<{
+    carousel_image: string;
+    carousel_word: string;
+  }>;
   carousel_title: React.ReactNode;
   carousel_description: React.ReactNode;
 }

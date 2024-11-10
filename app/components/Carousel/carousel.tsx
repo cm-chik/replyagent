@@ -3,7 +3,7 @@ import Image from "next/image";
 import type { CarouselCardInterface } from "@/app/interfaces";
 import { motion } from "framer-motion";
 
-const CarouselCard = (props: CarouselCardInterface) => {
+const CarouselCard: React.FC<CarouselCardInterface> = (props) => {
   return (
     <div className="px-12 pt-[20vh]">
       <div className="flex flex-col text-center leading-[4rem] space-y-[4rem]">
@@ -20,7 +20,7 @@ const CarouselCard = (props: CarouselCardInterface) => {
             style={{ display: "inline-block" }} // Ensure the content is inline for horizontal scrolling
           >
             <div className="flex gap-[4rem]">
-            <div className="flex gap-[2rem]  space-x-[4rem] justify-center items-center">
+            <div className="flex gap-[2rem] space-x-[4rem] justify-center items-center">
               {props.carousel_row.map((item, index) => (
                 <div
                   key={index}
