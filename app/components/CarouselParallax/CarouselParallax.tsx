@@ -16,23 +16,31 @@ const CarouselParallax = (props: CarouselParallaxContextsInterface) => {
               <motion.div
                   className="title"
                   initial={{ x: '100%', opacity: 1 }}
-                  whileInView={{ x: '0%', opacity: 1 }}
+                  whileInView={{ x: '15%', opacity: 1 }}
                   transition={{ duration: 1 }}
                 >
             <div className="text-[8rem] font-bold px-[2rem] whitespace-nowrap">{content.title}</div>
               </motion.div>
             </AnimatePresence>
-            <div className="grid grid-flow-row grid-cols-[auto_1fr] gap-x-[4rem] gap-y-[2rem] px-[10rem] py-[3rem] justify-items-center">
-              <div className=" text-[2rem] font-bold leading-none row-span-1">
+            <div className="flex justify-center">
+              <div className="flex  max-w-[1000px] gap-[12rem] py-[2rem]">
+                <div className="w-[60%]">
+                  <div className=" text-[3.5rem] font-bold leading-none row-span-1 py-[1rem]">
                 {content.header}
-              </div>
-
-              <Image src={content.section_icon} alt="section_image" height={0} width={80} className="row-span-1" />
-              <div className="col-span-2">
+                </div>
+                <div className="">
                 {content.description}
-              </div>
+              </div></div>
+                <div className="w-[40%]">
+                  <img src={content.section_icon} alt="section_image" style={{width: "70%"}} className="row-span-1" />
+                  </div>
+              
+
+              
+              
             </div>
-              <div className="" >
+            </div>
+              <div className="flex justify-center" >
                 <Image src={content.image} alt="image" height={0} width={1200} />
               </div>
           </div>

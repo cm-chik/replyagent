@@ -9,8 +9,9 @@ export default function SixCards(props: CardsInterface) {
           {props.section_header}
         </div>
       <div className="px-10  md:px-[12rem]"> { props.section_description}
-        </div>
-      <div className="md:grid px-12 grid-cols-3 grid-rows-2 gap-[2rem] max-md:space-y-[2rem]">
+      </div>
+      <div className="flex justify-center">
+      <div className="md:grid px-12 grid-cols-3 grid-rows-2 gap-[2rem] max-md:space-y-[2rem] max-w-[1100px]">
         {props.cards.map((card, index) => (
           <div
             key={index}
@@ -32,6 +33,7 @@ export default function SixCards(props: CardsInterface) {
             <div className="text-blue-500">More info -{">"} </div>
           </div>
         ))}
+          </div>
       </div>
     </div>
   );

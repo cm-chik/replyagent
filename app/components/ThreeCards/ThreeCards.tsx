@@ -8,7 +8,7 @@ export default function ThreeCards(props: CardsInterface) {
     <div className="flex flex-col items-center px-12 py-[8rem]">
       <div className="flex flex-col text-center leading-[4rem]">
         <div>{props.section_header}</div>
-        <div className="text-[4rem] font-bold tracking-tighter py-2">
+        <div className="text-[4rem] font-bold tracking-tighter py-2 w-[48rem]">
           {props.section_title}
         </div>
         <div>{props.section_description}</div>
