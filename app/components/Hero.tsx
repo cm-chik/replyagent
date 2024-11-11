@@ -5,9 +5,9 @@ import React from "react";
 export default function Hero() {
   return (
     <>
-      <div className="md:grid grid-cols-4 grid-flow-row align-middle h-[100vh] space-x-[6rem] px-12">
+      <div className="grid max-md:grid-rows-4 md:grid-cols-4 grid-flow-row align-middle h-[100vh] space-x-[6rem] px-12">
         <div className="left_column | row-span-6 col-span-2 flex flex-col gap-8 align-middle justify-self-center p-[6rem]">
-          <p className="text-[4rem] font-bold tracking-tight leading-none text-center ">
+          <p className="text-[5rem] font-bold tracking-tight leading-none text-center ">
             The Best Platform to Build and Sell AI Agents
           </p>
           <p className="text-[1.125rem]">

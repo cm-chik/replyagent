@@ -5,7 +5,7 @@ import { CarouselAnimation } from "@/app/animations/animation";
 
 const CarouselCard: React.FC<CarouselCardInterface> = (props) => {
   return (
-    <div className="px-12 py-[12rem]">
+    <div className="px-12 py-[12rem] w-screen overflow-hidden">
       <div className="flex flex-col text-center leading-[4rem] space-y-[4rem]">
         <div className="text-[4rem] font-bold tracking-tighter py-2 ">
           {props.carousel_title}
@@ -16,7 +16,7 @@ const CarouselCard: React.FC<CarouselCardInterface> = (props) => {
         <div className="flex w-[100%] max-md:flex-col justify-center gap-[2rem] max-md:space-y-[2rem] px-10">
           <CarouselAnimation>
             <div className="flex gap-[4rem]">
-            <div className="flex gap-[2rem] space-x-[4rem] justify-center items-center">
+            <div className="flex gap-[2rem] space-x-[4rem] justify-center items-center overflow-hidden">
               {props.carousel_row.map((item, index) => (
                 <div
                   key={index}

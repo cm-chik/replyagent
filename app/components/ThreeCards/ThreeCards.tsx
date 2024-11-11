@@ -6,8 +6,8 @@ import { FadeInWhenVisible } from "@/app/animations/animation";
 
 export default function ThreeCards(props: CardsInterface) {
   return (
-    <div className="flex flex-col items-center px-12 py-[8rem]">
-      <div className="flex flex-col text-center leading-[4rem]">
+    <div className="flex flex-col items-center py-[8rem] w-screen">
+      <div className="flex flex-col text-center leading-[4rem] w-screen items-center">
         <div>{props.section_header}</div>
         <div className="text-[4rem] font-bold tracking-tighter py-2 w-[48rem]">
           {props.section_title}
