@@ -1,3 +1,4 @@
+import { FadeInWhenVisible } from "@/app/animations/animation";
 import { CardsInterface } from "@/app/interfaces";
 import Image from "next/image";
 import React from "react";
@@ -13,6 +14,7 @@ export default function SixCards(props: CardsInterface) {
       <div className="flex justify-center">
       <div className="md:grid px-12 grid-cols-3 grid-rows-2 gap-[2rem] max-md:space-y-[2rem] max-w-[1100px]">
         {props.cards.map((card, index) => (
+          <FadeInWhenVisible key={index}>
           <div
             key={index}
             className=" bg-blue-50 rounded-xl p-8 space-y-2 "
@@ -31,7 +33,8 @@ export default function SixCards(props: CardsInterface) {
             </div>
             <div className="font-light">{card.card_description}</div>
             <div className="text-blue-500">More info -{">"} </div>
-          </div>
+            </div>
+            </FadeInWhenVisible>
         ))}
           </div>
       </div>

@@ -2,6 +2,7 @@ import { CardsInterface } from "@/app/interfaces";
 import Image from "next/image";
 import React from "react";
 import AnimatedButton from "../AnimatedButton";
+import { FadeInWhenVisible } from "@/app/animations/animation";
 
 export default function ThreeCards(props: CardsInterface) {
   return (
@@ -20,13 +21,15 @@ export default function ThreeCards(props: CardsInterface) {
             className=" border-[1px] border-gray-400 rounded-xl p-8 space-y-8 md:w-1/3 "
           >
             <span className="flex justify-center">
+              <FadeInWhenVisible>
               <Image
                 src={card.card_image}
                 alt=""
                 height={48}
                 width={48}
                 className=""
-              />
+                />
+                </FadeInWhenVisible>
             </span>
             <div className="text-3xl font-bold overflow-hidden">
               {card.card_title}
@@ -53,13 +56,15 @@ export function ThreeCardsWithButton(props: CardsInterface) {
             className="  bg-gray-200 rounded-xl p-8 space-y-8 md:w-1/3 "
           >
             <span className="flex justify-center">
+              <FadeInWhenVisible>
               <Image
                 src={card.card_image}
                 alt=""
                 height={48}
                 width={48}
                 className=""
-              />
+                />
+                </FadeInWhenVisible>
             </span>
             <div className="text-3xl font-bold overflow-hidden text-center">
               {card.card_title}

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import type { CarouselCardInterface } from "@/app/interfaces";
-import { motion } from "framer-motion";
+import { CarouselAnimation } from "@/app/animations/animation";
 
 const CarouselCard: React.FC<CarouselCardInterface> = (props) => {
   return (
@@ -14,11 +14,7 @@ const CarouselCard: React.FC<CarouselCardInterface> = (props) => {
           {props.carousel_description}
         </div>
         <div className="flex w-[100%] max-md:flex-col justify-center gap-[2rem] max-md:space-y-[2rem] px-10">
-          <motion.div
-            animate={{ x: ["0%","-40%"] }}
-            transition={{ duration: 20, ease: "linear", repeat: Infinity }}
-            style={{ display: "inline-block" }} // Ensure the content is inline for horizontal scrolling
-          >
+          <CarouselAnimation>
             <div className="flex gap-[4rem]">
             <div className="flex gap-[2rem] space-x-[4rem] justify-center items-center">
               {props.carousel_row.map((item, index) => (
@@ -67,7 +63,7 @@ const CarouselCard: React.FC<CarouselCardInterface> = (props) => {
               ))}
               </div>
               </div>
-          </motion.div>
+          </CarouselAnimation>
         </div>
       </div>
     </div>
