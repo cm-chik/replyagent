@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="w-full flex justify-between items-center row-screen p-4 bg-white ">
         <div className="flex justify-normal gap-12 items-center row-screen p-4">
           <Image
-            src="/images/logo/logo_dark.png"
+            src="/images/logo/logo_bright.png"
             alt="logo"
             width={180}
             height={40}
@@ -31,8 +31,8 @@ const Navbar = () => {
         <div className="flex gap-8">
           <div className="flex gap-2 items-center">
             <Image
-              src="/images/icons/.svg"
-              alt=""
+              src="/images/i18n/gb.svg"
+              alt="GB"
               width={20}
               height={20}
               //<Link href={"/"}>Features</Link>

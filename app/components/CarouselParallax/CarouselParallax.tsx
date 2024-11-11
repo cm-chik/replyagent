@@ -17,10 +17,9 @@ const CarouselParallax = (props: CarouselParallaxContextsInterface) => {
                   className="title"
                   initial={{ x: '100%', opacity: 1 }}
                   whileInView={{ x: '0%', opacity: 1 }}
-                  exit={{x:'-100%',opacity: 0 }}
                   transition={{ duration: 1 }}
                 >
-            <div className="text-[8rem] font-bold px-[2rem]">{content.title}</div>
+            <div className="text-[8rem] font-bold px-[2rem] whitespace-nowrap">{content.title}</div>
               </motion.div>
             </AnimatePresence>
             <div className="grid grid-flow-row grid-cols-[auto_1fr] gap-x-[4rem] gap-y-[2rem] px-[10rem] py-[3rem] justify-items-center">
