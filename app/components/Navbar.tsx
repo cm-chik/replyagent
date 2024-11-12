@@ -19,7 +19,7 @@ const Navbar = () => {
             height={40}
             style={{ maxWidth: "73vw" }}
           />
-          <div className="hidden md:flex gap-[1rem] items-center">
+          <div className="hidden md:flex gap-[2rem] items-center">
             <Link href={"/overview"}>Overview</Link>
             <Link href={"/whitelabel"}>Whitelabel</Link>
             <Link href={"/pricing"}>Pricing</Link>

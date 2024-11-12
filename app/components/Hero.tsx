@@ -16,7 +16,7 @@ export default function Hero() {
             searching for. Elevate your business with the dream toolkit designed
             to streamline and supercharge your client solutions.
           </span>
-          <div className="flex h-[2rem]">
+          <div className="flex w-[100%] justify-around">
             {[
               "/images/icons/whatsapp.svg",
               "/images/icons/ig.svg",
@@ -25,11 +25,9 @@ export default function Hero() {
               "/images/icons/call.svg",
               "/images/icons/sms.svg",
             ].map((path, index) => (
-              <div key={index} className="relative h-[100%] px-[12px] sm:px-[2rem] ">
-                <Image src={path} alt={`Icon ${index + 1}`} fill />
-              </div>
+                <Image src={path} alt={`Icon ${index + 1}`} height={0} width={30} />
             ))}
-            </div>
+          </div>
           <AnimatedButton title="Try it FREE!" icon="/images/icons/cart.svg" />
         </div>
         <div className="right_column |  col-span-1 grid grid-cols-2 gap-[2rem] h-[80vh] overflow-hidden ">

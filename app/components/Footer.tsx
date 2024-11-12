@@ -63,7 +63,7 @@ const Footer = () => {
       </div>
     <div className="md:flex justify-between p-12 items-center">
       <div>© 2023 Connecta Group Corporation.</div>
-        <div className="flex ">
+        <div className="flex justify-around ">
           <Image src="/images/icons/facebook.svg" alt="" height={0} width={30} />
           <Image src="/images/icons/twitter.svg" alt="" height={0} width={30}/>
           <Image src="/images/icons/ig.svg" alt="" height={0} width={30}/>
