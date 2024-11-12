@@ -38,7 +38,7 @@ const CarouselCard: React.FC<CarouselCardInterface> = (props) => {
                   </div>
                 </div>
               ))}
-            <div className="flex gap-2 space-x-[4rem]">
+            <div className="flex gap-[2rem] space-x-[4rem]">
               {props.carousel_row.map((item, index) => (
                 <div
                 key={index}
