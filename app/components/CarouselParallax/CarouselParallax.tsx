@@ -13,12 +13,12 @@ const CarouselParallax = (props: CarouselParallaxContextsInterface) => {
         (content: CarouselParallaxContextInterface, index: number) => (
           <div className="flex flex-col bg-green-600 text-white px-12 py-[4rem] md:py-[12rem]" key={index}>
               <AnimationInRightWhenVisible >
-              <div className="max-md:text-[4rem] md:text-[8rem] font-bold px-[2rem] whitespace-nowrap max-w-[120] ">{content.title}</div>
+              <div className="text-[2.5rem] md:text-[8rem] font-bold px-[2rem] whitespace-nowrap max-w-[120] ">{content.title}</div>
               </AnimationInRightWhenVisible>
             <div className="flex justify-center">
               <div className="flex max-w-[1000px] gap-[12rem] py-[2rem]">
                 <div className="md:w-[60%]">
-                  <div className=" text-[3.5rem] font-bold leading-none row-span-1 py-[1rem]">
+                  <div className="text-[1.5rem] md:text-[3.5rem] font-bold leading-none row-span-1 py-[1rem]">
                 {content.header}
                 </div>
                 <div className="">

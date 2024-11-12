@@ -5,8 +5,8 @@ import { CarouselAnimation } from "@/app/animations/animation";
 
 const CarouselCard: React.FC<CarouselCardInterface> = (props) => {
   return (
-    <div className="px-12 w-screen overflow-hidden h-[800px] flex flex-col justify-around text-center gap-[4rem] items-center py-[12rem]">
-        <div className="text-[4rem] font-bold leading-none  max-w-[40rem]">
+    <div className="px-12 w-screen overflow-hidden flex flex-col justify-around text-center gap-[4rem] items-center py-[12rem]">
+        <div className="text-[2.5rem] md:text-[4rem] font-bold leading-none  max-w-[40rem]">
           {props.carousel_title}
         </div>
         <div className="leading-normal max-w-[40rem]">

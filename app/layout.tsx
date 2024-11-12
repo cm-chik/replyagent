@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${manrope.className}  w-screen`}>
+      <body className={`${manrope.className}`}>
         <Navbar />
         {children}
         <Footer />

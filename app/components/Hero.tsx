@@ -4,19 +4,19 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="flex justify-center md:h-[80%] md:max-h-[1000] overflow-hidden ">
-      <div className="grid md:grid-cols-2 grid-flow-row md:space-x-[6rem] md:px-12 max-w-[120rem] md:items-start">
-        <div className="left_column | row-span-6 col-span-1 flex flex-col gap-8 py-[6rem] max-w-[35rem] items-center">
-          <p className="text-[3.5rem] font-bold tracking-tight leading-none text-center ">
+    <div className="flex flex-col items-center justify-center overflow-hidden">
+      <div className="grid md:grid-cols-2  md: max-w-[120rem] md:items-start md:h-[80vh] ">
+        <div className="left_column | col-span-1 flex flex-col gap-8 py-[6rem] items-center px-12">
+          <span className="flex flex-col text-[2.5rem] md:text-[3.5rem] font-bold tracking-tight leading-none text-center ">
             The Best Platform to Build and Sell AI Agents
-          </p>
-          <p className="text-[1.125rem]">
+          </span>
+          <span className="text-[1.125rem] ">
             If you&apos;re a professional offering Chatbots, Automation, and CRM
             services, ReplyAgent is the ultimate platform you&apos;ve been
             searching for. Elevate your business with the dream toolkit designed
             to streamline and supercharge your client solutions.
-          </p>
-          <div className="relative flex justify-between space-x-12 w-[100%] h-[150px] max-h-[48px] px-2">
+          </span>
+          <div className="flex h-[2rem]">
             {[
               "/images/icons/whatsapp.svg",
               "/images/icons/ig.svg",
@@ -25,14 +25,14 @@ export default function Hero() {
               "/images/icons/call.svg",
               "/images/icons/sms.svg",
             ].map((path, index) => (
-              <div key={index} className="relative w-[35px] h-[100%] ">
+              <div key={index} className="relative h-[100%] px-[12px] sm:px-[2rem] ">
                 <Image src={path} alt={`Icon ${index + 1}`} fill />
               </div>
             ))}
             </div>
           <AnimatedButton title="Try it FREE!" icon="/images/icons/cart.svg" />
         </div>
-        <div className="right_column | grid grid-cols-2 gap-[2rem] max-md:max-h-[100vh] max-md:w-[80%] max-md:align-middle overflow-hidden">
+        <div className="right_column |  col-span-1 grid grid-cols-2 gap-[2rem] h-[80vh] overflow-hidden ">
           <div className="screenshot_column_1 | -mt-[100%] flex flex-col space-y-[2rem] ">
           {[
             "/images/message/telegram yoga message.svg",
@@ -57,7 +57,7 @@ export default function Hero() {
             </div>
           ))}
           </div>
-          <div className="screenshot_column_2 | flex flex-col space-y-[2rem]">
+          <div className="screenshot_column_2 | flex flex-col space-y-[2rem] overflow-hidden" >
             {[
               "/images/message/dbf_converter.svg",
               "/images/message/telegram bike shop.svg",

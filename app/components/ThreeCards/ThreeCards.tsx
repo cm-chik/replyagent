@@ -6,19 +6,19 @@ import { FadeInWhenVisible } from "@/app/animations/animation";
 
 export default function ThreeCards(props: CardsInterface) {
   return (
-    <div className="flex flex-col items-center py-[8rem] w-screen space-y-[2rem]">
-      <div className="flex flex-col text-center w-screen items-center  space-y-[1rem]">
+    <div className="flex flex-col items-center px-12 py-[8rem] space-y-[2rem] w-screen">
+      <div className="flex flex-col text-center items-center  space-y-[1rem]">
         <div >{props.section_header}</div>
-        <div className="text-[4rem] font-bold tracking-tighter py-2 max-w-[48rem] leading-none">
+        <div className="text-[2.5rem] md:text-[4rem] font-bold tracking-tighter py-2 max-w-[48rem] leading-none">
           {props.section_title}
         </div>
         <div>{props.section_description}</div>
       </div>
-      <div className="flex w-[100%] max-md:flex-col justify-center gap-[2rem] max-md:space-y-[2rem] px-10 max-w-[120rem]">
+      <div className="flex max-md:flex-col justify-center md:gap-[2rem] space-y-[2rem] md:space-y-0 max-w-[80rem]">
         {props.cards.map((card, index) => (
           <div
             key={index}
-            className=" border-[1px] border-gray-400 rounded-xl p-8 space-y-8 md:w-1/3 "
+            className=" border-[1px] border-gray-400 rounded-xl p-8 space-y-8 md:w-1/3"
           >
             <span className="flex justify-center">
               <FadeInWhenVisible>
@@ -46,7 +46,7 @@ export default function ThreeCards(props: CardsInterface) {
 export function ThreeCardsWithButton(props: CardsInterface) {
   return (
     <div className="flex flex-col items-center py-[8rem] w-screen space-y-[2rem]">
-        <div className="text-[4rem] font-bold tracking-tighter leading-none py-2 text-center">
+        <div className="text-[2.5rem] md:text-[4rem] font-bold tracking-tighter leading-none py-2 text-center">
           {props.section_title}
         </div>
         <div className="px-[2rem]">{props.section_description}</div>
