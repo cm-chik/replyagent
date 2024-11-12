@@ -26,7 +26,7 @@ export function AnimationInRightWhenVisible({ children }: { children: React.Reac
       <motion.div
         className="overflow-hidden max-w-screen"
         initial={{ x: '80%', opacity: 1 }}
-        whileInView={{ x: '5%', opacity: 1 }}
+        whileInView={{ x: '0%', opacity: 1 }}
         transition={{ duration: 1 }}
       >
        {children}

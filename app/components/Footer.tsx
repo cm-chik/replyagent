@@ -61,9 +61,9 @@ const Footer = () => {
         <span><Link href="/">Privacy Preferences</Link></span>
       </div>
       </div>
-    <div className="md:flex justify-between p-12 items-center">
+    <div className="md:flex justify-between text-center p-12 items-center">
       <div>© 2023 Connecta Group Corporation.</div>
-        <div className="flex justify-around ">
+        <div className="flex justify-around py-[1rem] md:gap-x-[2rem]">
           <Image src="/images/icons/facebook.svg" alt="" height={0} width={30} />
           <Image src="/images/icons/twitter.svg" alt="" height={0} width={30}/>
           <Image src="/images/icons/ig.svg" alt="" height={0} width={30}/>
