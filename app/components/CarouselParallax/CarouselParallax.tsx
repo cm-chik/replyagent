@@ -11,7 +11,7 @@ const CarouselParallax = (props: CarouselParallaxContextsInterface) => {
     <div className="relative overflow-hidden">
       {props.CarouselParallaxContext!.map(
         (content: CarouselParallaxContextInterface, index: number) => (
-          <div className="flex flex-col bg-green-600 text-white px-12 py-[12rem]" key={index}>
+          <div className="flex flex-col bg-green-600 text-white px-12 py-[4rem] md:py-[12rem]" key={index}>
               <AnimationInRightWhenVisible >
               <div className="max-md:text-[4rem] md:text-[8rem] font-bold px-[2rem] whitespace-nowrap max-w-[120] ">{content.title}</div>
               </AnimationInRightWhenVisible>
