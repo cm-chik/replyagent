@@ -4,13 +4,13 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <>
-      <div className="grid max-md:grid-rows-4 md:grid-cols-4 grid-flow-row align-middle h-[100vh] space-x-[6rem] px-12">
-        <div className="left_column | row-span-6 col-span-2 flex flex-col gap-8 align-middle justify-self-center p-[6rem]">
+    <div className="flex justify-center overflow-hidden">
+      <div className="grid max-md:grid-rows-4 md:grid-cols-4 grid-flow-row h-[100vh] space-x-[6rem] px-12 max-w-[120rem] ">
+        <div className="left_column | row-span-6 col-span-2 flex flex-col gap-8 p-[6rem] justify-center max-w-[40rem]">
           <p className="text-[5rem] font-bold tracking-tight leading-none text-center ">
             The Best Platform to Build and Sell AI Agents
           </p>
-          <p className="text-[1.125rem]">
+          <p className="text-[1.125rem]  max-w-[40rem]">
             If you&apos;re a professional offering Chatbots, Automation, and CRM
             services, ReplyAgent is the ultimate platform you&apos;ve been
             searching for. Elevate your business with the dream toolkit designed
@@ -83,6 +83,6 @@ export default function Hero() {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }

@@ -14,7 +14,7 @@ export default function ThreeCards(props: CardsInterface) {
         </div>
         <div>{props.section_description}</div>
       </div>
-      <div className="flex w-[100%] max-md:flex-col justify-center gap-[2rem] max-md:space-y-[2rem] px-10">
+      <div className="flex w-[100%] max-md:flex-col justify-center gap-[2rem] max-md:space-y-[2rem] px-10 max-w-[120rem]">
         {props.cards.map((card, index) => (
           <div
             key={index}
@@ -49,7 +49,7 @@ export function ThreeCardsWithButton(props: CardsInterface) {
           {props.section_title}
         </div>
         <div>{props.section_description}</div>
-      <div className="flex w-[100%] max-md:flex-col justify-center gap-[2rem] max-md:space-y-[2rem] px-10">
+      <div className="flex w-[100%] max-md:flex-col justify-center gap-[2rem] max-md:space-y-[2rem] px-10 max-w-[120rem]">
         {props.cards.map((card, index) => (
           <div
             key={index}

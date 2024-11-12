@@ -5,11 +5,11 @@ import React from "react";
 
 export default function SixCards(props: CardsInterface) {
   return (
-    <div className="space-y-[2rem] px-12 py-[4rem]">
-        <div className="text-[5rem] font-bold tracking-tighter py-2 text-center leading-none">
+    <div className="flex flex-col space-y-[2rem] px-12 py-[4rem] items-center">
+        <div className="text-[5rem] font-bold tracking-tighter py-2 text-center leading-none max-w-[60rem]">
           {props.section_header}
         </div>
-      <div className="px-10  md:px-[12rem]"> { props.section_description}
+      <div className="px-10 md:px-[12rem] max-w-[60rem]"> { props.section_description}
       </div>
       <div className="flex justify-center">
       <div className="md:grid px-12 grid-cols-3 grid-rows-2 gap-[2rem] max-md:space-y-[2rem] max-w-[1100px]">

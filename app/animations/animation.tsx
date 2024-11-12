@@ -50,7 +50,7 @@ export function ParallaxFullScreenAnimation({ children }: { children: React.Reac
   return (
     <AnimatePresence >
     <motion.div 
-              className="h-screen sticky top-0 grid grid-cols-[50%_50%] px-[6%] bg-white gap-12"
+              className="h-[100vh] sticky top-[20vh] bg-white"
               whileInView={{ opacity: 1 }}
               initial={{ opacity: 0 }}
               exit={{ opacity: 0 }}>

@@ -12,7 +12,7 @@ export default function NineCards(props: CardsInterface) {
         {props.cards.map((card, index) => (
           <div
             key={index}
-            className="  rounded-xl p-8 space-y-8 "
+            className="rounded-xl p-8 space-y-8 "
           >
             <span className="flex justify-center">
               <Image
@@ -26,7 +26,7 @@ export default function NineCards(props: CardsInterface) {
             <div className="text-3xl font-bold overflow-hidden text-center">
               {card.card_title}
             </div>
-            <div className="text-center">{card.card_description}</div>
+            <div className="text-center max-w-[20rem]">{card.card_description}</div>
           </div>
         ))}
       </div>

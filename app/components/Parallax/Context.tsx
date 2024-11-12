@@ -31,7 +31,7 @@ export const ParallaxContexts: ParallaxContextsInterface = {
       title: "Increase in sales conversion",
       header: "Increase your conversion rate by up to 89%",
       description: "Why complicate things? Our hybrid chatbot lets customers shop, order, and set up meetings effortlessly, all through their favorite messaging app!",
-      image: "/images/parallax/04_restaurant.svg",
+      image: "/images/parallax/04_bday.svg",
     },
   ],
 };

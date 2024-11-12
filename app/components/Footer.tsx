@@ -16,7 +16,7 @@ const Footer = () => {
           <Image src="/images/logo/logo_dark.png" alt="" height={0} width={450} />
         </div>
     </div>
-    <div className="grid max-md:grid-cols-3 md:grid-cols-6 justify-cente gap-[2rem] p-12">
+    <div className="grid max-md:grid-cols-3 md:grid-cols-6 justify-center gap-[2rem] p-12  max-w-[120rem] items-center justify-self-center">
       <div className="max-md:hidden"><Image src="/images/logo/logo_dark.png" alt="" height={0} width={148}/></div>
         <div className="flex flex-col gap-y-2">
           <b>Channels</b>
