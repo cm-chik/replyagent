@@ -74,7 +74,8 @@ export function ThreeCardsWithButton(props: CardsInterface) {
           </div>
         ))}
       </div>
-      
+      <div className="flex justify-center"> <AnimatedButton title="Try it FREE!" icon="/images/icons/cart.svg"/>
+</div>
     </div>
   );
 }
