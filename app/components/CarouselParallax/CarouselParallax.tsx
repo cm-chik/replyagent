@@ -4,17 +4,17 @@ import type {
   CarouselParallaxContextInterface,
   CarouselParallaxContextsInterface,
 } from "@/app/interfaces";
-import { FadeInWhenVisible } from "@/app/animations/animation";
+import { AnimationInRightWhenVisible, FadeInWhenVisible } from "@/app/animations/animation";
 
 const CarouselParallax = (props: CarouselParallaxContextsInterface) => {
   return (
-    <div className="relative ">
+    <div className="relative overflow-hidden ">
       {props.CarouselParallaxContext!.map(
         (content: CarouselParallaxContextInterface, index: number) => (
           <div className="flex flex-col bg-green-600 text-white px-12" key={index}>
-            {/* …<AnimationInRightWhenVisible > */}
+            …<AnimationInRightWhenVisible >
               <div className="max-md:text-[4rem] md:text-[8rem] font-bold px-[2rem] whitespace-nowrap max-w-[120] ">{content.title}</div>
-            {/* </AnimationInRightWhenVisible> */}
+            </AnimationInRightWhenVisible>
             <div className="flex justify-center">
               <div className="flex max-w-[1000px] gap-[12rem] py-[2rem]">
                 <div className="md:w-[60%]">
