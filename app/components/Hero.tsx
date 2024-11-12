@@ -25,7 +25,7 @@ export default function Hero() {
               "/images/icons/call.svg",
               "/images/icons/sms.svg",
             ].map((path, index) => (
-                <Image src={path} alt={`Icon ${index + 1}`} height={0} width={30} />
+              <Image key={index} src={path} alt={`Icon ${index + 1}`} height={0} width={30} />
             ))}
           </div>
           <AnimatedButton title="Try it FREE!" icon="/images/icons/cart.svg" />
