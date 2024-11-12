@@ -12,7 +12,7 @@ const CarouselParallax = (props: CarouselParallaxContextsInterface) => {
       {props.CarouselParallaxContext!.map(
         (content: CarouselParallaxContextInterface, index: number) => (
           <div className="flex flex-col bg-green-600 text-white px-12" key={index}>
-            …<AnimationInRightWhenVisible >
+            <AnimationInRightWhenVisible >
               <div className="max-md:text-[4rem] md:text-[8rem] font-bold px-[2rem] whitespace-nowrap max-w-[120] ">{content.title}</div>
             </AnimationInRightWhenVisible>
             <div className="flex justify-center">
