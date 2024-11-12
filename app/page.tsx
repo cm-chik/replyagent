@@ -3,7 +3,7 @@
 import { FirstCard, SecondCard, GetStartedCard} from "./components/ThreeCards/Context";
 import { ChannelCards } from "./components/SixCards/Context";
 import Hero from "./components/Hero";
-import ThreeCards, { ThreeCardsWithButton } from "./components/ThreeCards/ThreeCards";
+import ThreeCards, {ThreeCardsWithButton } from "./components/ThreeCards/ThreeCards";
 import Parallax from "./components/Parallax/Parallax";
 import { ParallaxContexts } from "./components/Parallax/Context";
 import { CarouselParallaxContexts } from "./components/CarouselParallax/Context";
@@ -16,11 +16,11 @@ import NineCards from "./components/NineCards/NineCards";
 
 export default function Home() {
   return (
-    <div className="font-[family-name:var(--font-geist-sans)] ">
+    <div className="font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col">
-        <Hero />
+        {/* <Hero /> */}
         <ThreeCards {...FirstCard} />
-        <ThreeCards {...SecondCard} />
+        <ThreeCards {...SecondCard} /> 
         <Parallax {...ParallaxContexts} />
         <SixCards {...ChannelCards} /> 
         <CarouselParallax {...CarouselParallaxContexts} />

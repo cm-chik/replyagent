@@ -4,20 +4,22 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="bg-[#1d1d1f] text-white py-12 md:px-24">
-    <div className="flex flex-col text-center items-center justify-center gap-y-[3rem] py-12">
+    <div className="bg-[#1d1d1f] text-white py-12 md:px-24 w-screen">
+    <div className="flex flex-col text-center items-center justify-center gap-y-[3rem] py-[1rem]">
         <div><span className="text-[3rem] font-bold">Get Started for FREE</span> <br/>
           No credit card required <br />
         </div>
         <div>
           <AnimatedButton title="Try it FREE!" icon="/images/icons/cart.svg" />
         </div>
-        <div className="max-md:flex md:hidden max-md:py-4">
+        <div className="max-md:flex md:hidden px-[2rem] ">
           <Image src="/images/logo/logo_dark.png" alt="" height={0} width={450} />
         </div>
     </div>
-    <div className="grid max-md:grid-cols-3 md:grid-cols-6 justify-center gap-[2rem] p-12  max-w-[120rem] items-center justify-self-center">
-      <div className="max-md:hidden"><Image src="/images/logo/logo_dark.png" alt="" height={0} width={148}/></div>
+    <div className="grid sm:grid-cols-3 md:grid-cols-6 justify-center gap-[2rem] p-12 max-w-[120rem]">
+        <div className="max-md:hidden">
+          <Image src="/images/logo/logo_dark.png" alt="" height={0} width={148}  className=""/>
+        </div>
         <div className="flex flex-col gap-y-2">
           <b>Channels</b>
           <span><Link href="/">Channels</Link></span>
@@ -59,9 +61,9 @@ const Footer = () => {
         <span><Link href="/">Privacy Preferences</Link></span>
       </div>
       </div>
-    <div className="flex justify-between p-12 items-center">
+    <div className="md:flex justify-between p-12 items-center">
       <div>© 2023 Connecta Group Corporation.</div>
-        <div className="flex gap-2">
+        <div className="sm:flex sm:gap-[2rem] grid grid-cols-2 grid-rows-2 gap-2">
           <Image src="/images/icons/facebook.svg" alt="" height={0} width={30} />
           <Image src="/images/icons/twitter.svg" alt="" height={0} width={30}/>
           <Image src="/images/icons/ig.svg" alt="" height={0} width={30}/>
