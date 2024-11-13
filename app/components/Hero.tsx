@@ -5,12 +5,12 @@ import React from "react";
 export default function Hero() {
   return (
     <div className="flex flex-col items-center justify-center overflow-hidden">
-      <div className="grid md:grid-cols-2  md: max-w-[120rem] md:items-start md:h-[80vh] ">
+      <div className="grid md:grid-cols-2  md: max-w-[120rem] md:items-start">
         <div className="left_column | col-span-1 flex flex-col gap-8 py-[6rem] items-center px-12">
-          <span className="flex flex-col text-[2.5rem] md:text-[3.5rem] font-bold tracking-tight leading-none text-center ">
+          <span className="flex flex-col text-[2.5rem] md:text-[4rem] max-w-[40rem] font-bold tracking-tight leading-none text-center ">
             The Best Platform to Build and Sell AI Agents
           </span>
-          <span className="text-[1.125rem] ">
+          <span className="md:text-[1.7rem] max-w-[30rem]">
             If you&apos;re a professional offering Chatbots, Automation, and CRM
             services, ReplyAgent is the ultimate platform you&apos;ve been
             searching for. Elevate your business with the dream toolkit designed
@@ -25,13 +25,13 @@ export default function Hero() {
               "/images/icons/call.svg",
               "/images/icons/sms.svg",
             ].map((path, index) => (
-              <Image key={index} src={path} alt={`Icon ${index + 1}`} height={0} width={30} />
+              <Image key={index} src={path} alt={`Icon ${index + 1}`} height={0} width={40} />
             ))}
           </div>
-          <AnimatedButton title="Try it FREE!" icon="/images/icons/cart.svg" />
+          <div className="flex justify-center w-full"><AnimatedButton title="Try it FREE!" icon="/images/icons/cart.svg" /></div>
         </div>
-        <div className="right_column |  col-span-1 grid grid-cols-2 gap-[2rem] h-[80vh] overflow-hidden ">
-          <div className="screenshot_column_1 | -mt-[100%] flex flex-col space-y-[2rem] ">
+        <div className="right_column |  md:h-[850px] col-span-1 grid grid-cols-2 gap-[2rem]  px-[8rem] h-screen overflow-hidden">
+          <div className="screenshot_column_1 | -mt-[100%] flex flex-col space-y-[2rem]  h-screen ">
           {[
             "/images/message/telegram yoga message.svg",
             "/images/message/whatsapp birthday messages.svg",
