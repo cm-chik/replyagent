@@ -8,12 +8,12 @@ import { ParallaxFullScreenAnimation } from "@/app/animations/animation";
 
 const Parallax = (props: ParallaxContextsInterface) => {
   return (
-    <div className="flex justify-center pt-[20vh]">
-      <div className="hidden md:flex md:flex-col md:py-[4rem] md:w-screen md:p-[4rem] md:items-center">
+    <div className="flex justify-center">
+      <div className="hidden md:flex md:flex-col  md:w-screen md:p-[4rem] md:items-center">
         {props.ParallaxContext!.map(
           (content: ParallaxContextInterface, index: number) => (
            <ParallaxFullScreenAnimation key={index}>
-            <div className="flex flex-col md:flex-row gap-x-[5rem] align-middle " >
+            <div className="flex flex-col md:flex-row gap-x-[5rem]" >
               <div className="flex flex-col justify-center w-1/2 max-w-[40rem] ">
                   <div>{content.title}</div>
                   <div className="text-[2.5rem] md:text-[4rem] font-bold leading-none py-[2rem]">
@@ -21,8 +21,8 @@ const Parallax = (props: ParallaxContextsInterface) => {
                   </div>
                   <div>{content.description}</div>
               </div>
-              <div className="w-1/2 py-12" >
-                <Image src={content.image} alt="image" width={400} height={800} style={{objectFit: "contain"}}/>
+              <div className="relative w-[40rem] h-[40rem] p-[2rem] " >
+                  <Image src={content.image} alt="image" fill style={{objectFit: "contain"}}/>
               </div>
             </div>
            </ParallaxFullScreenAnimation>
